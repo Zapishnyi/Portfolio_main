@@ -18,13 +18,19 @@ html {
 .welcome_pix {
     height: 100%;
     width: 100%;
-    background-color: chartreuse;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 .welcome_pix img {
     width: 80%;
+    height: 60%;
+
+    filter: drop-shadow(0px 0px 10px #222);
 
 }
 
@@ -54,7 +60,7 @@ ul {
 }
 
 li {
-    background-color: rgb(255, 161, 161);
+    background-color: rgb(105, 59, 59);
     list-style: none;
     padding: 15px;
     border-radius: 5px;

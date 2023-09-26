@@ -13,7 +13,7 @@ const content_array = [
 
 let content_height = window.innerHeight;
 
-let button_colors = ["255, 161, 161", "255, 161, 161", "255, 161, 161"];
+let button_colors = ["105, 59, 59", "105, 59, 59", "105, 59, 59"];
 
 function section_size() {
   content_height = window.innerHeight;
@@ -29,7 +29,7 @@ function button_color_switch() {
       ? ((button_colors[index] = "207, 129, 129"),
         (buttons[index].style.cssText =
           "background-color : rgb(" + button_colors[index] + ");"))
-      : ((button_colors[index] = "255, 161, 161"),
+      : ((button_colors[index] = "105, 59, 59"),
         (buttons[index].style.cssText =
           "background-color : rgb(" + button_colors[index] + ");"));
   });
