@@ -6,14 +6,32 @@ html {
     width: 100%;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
 .welcome_page {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.welcome_pix {
+    height: 100%;
+    width: 100%;
+    background-color: chartreuse;
+
+
+}
+
+.welcome_pix img {
+    width: 80%;
+
+}
+
+.welcome_message {
+    height: 100%;
+    width: 100%;
+    background-color: darkmagenta;
 }
 
 .nav_panel {
@@ -21,7 +39,7 @@ html {
     height: 80px;
     position: sticky;
     top: 0;
-    background-color: rgb(222, 223, 223);
+    background-color: rgb(8, 49, 49);
     box-shadow: 0 3px 8px rgb(59, 59, 59);
 }
 
@@ -40,7 +58,7 @@ li {
     list-style: none;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 2px 2px 8px rgb(100, 100, 100);
+    box-shadow: 0px 0px 20px rgb(199, 255, 135);
     transition: 0.2s;
     cursor: pointer;
     user-select: none;
@@ -50,26 +68,18 @@ li {
 }
 
 .section {
-
     margin: 0 10%;
     background-size: cover;
-
 }
 
 .about_me {
-
     background: rgb(82, 139, 55);
-
 }
 
 .projects {
-
     background: rgb(55, 70, 139);
-
 }
 
 .contacts {
-
     background: rgb(139, 55, 128);
-
 }
