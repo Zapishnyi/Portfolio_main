@@ -1,0 +1,75 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.welcome_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_panel {
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(222, 223, 223);
+    box-shadow: 0 3px 8px rgb(59, 59, 59);
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    padding-left: 60px;
+}
+
+li {
+    background-color: rgb(255, 161, 161);
+    list-style: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgb(100, 100, 100);
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    width: 150px;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.section {
+
+    margin: 0 10%;
+    background-size: cover;
+
+}
+
+.about_me {
+
+    background: rgb(82, 139, 55);
+
+}
+
+.projects {
+
+    background: rgb(55, 70, 139);
+
+}
+
+.contacts {
+
+    background: rgb(139, 55, 128);
+
+}
