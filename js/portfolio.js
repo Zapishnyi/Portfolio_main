@@ -25,7 +25,7 @@ function button_color_switch() {
   console.log(button_colors);
   content_array.forEach((element, index) => {
     (element.getBoundingClientRect().y <= 80) &
-    (element.getBoundingClientRect().y >= -(content_height - 80))
+    (element.getBoundingClientRect().y >= -(content_height - 161))
       ? ((button_colors[index] = "207, 129, 129"),
         (buttons[index].style.cssText =
           "background-color : rgb(" + button_colors[index] + ");"))
