@@ -44,46 +44,60 @@ html {
         rotate: 0 0 0 360deg;
     }
 
-    100% {
-        rotate: 1 0.5 0.5 360deg;
+    25% {
+        rotate: 0 1 1 360deg;
     }
+
+    50% {
+        rotate: 0 0 0 360deg;
+    }
+
+    75% {
+        rotate: 1 0 1 360deg;
+    }
+
+    100% {
+        rotate: 0 0 0 360deg;
+    }
+
+
 }
 
 .side_top {
     background-color: blueviolet;
     transform: translate3d(0, -100px, 0) rotateX(90deg);
-    animation: rotate_Y 3s linear infinite;
+    animation: rotate_Y 15s infinite;
 }
 
 .side_right {
     background-color: rgb(43, 226, 73);
     transform: translate3d(100px, 0, 0) rotateY(90deg);
-    animation: rotate_Y 3s linear infinite;
+    animation: rotate_Y 15s infinite;
 
 }
 
 .side_left {
     background-color: rgb(226, 43, 43);
     transform: translate3d(-100px, 0, 0) rotateY(90deg);
-    animation: rotate_Y 3s linear infinite;
+    animation: rotate_Y 15s infinite;
 }
 
 .side_front {
     background-color: rgb(214, 226, 43);
     transform: translate3d(0, 0, 100px);
-    animation: rotate_Y 3s linear infinite;
+    animation: rotate_Y 15s infinite;
 }
 
 .side_back {
     background-color: rgb(148, 98, 5);
     transform: translate3d(0, 0, -100px);
-    animation: rotate_Y 3s linear infinite;
+    animation: rotate_Y 15s infinite;
 }
 
 .side_bottom {
     background-color: rgb(1, 26, 255);
     transform: translate3d(0, 100px, 0) rotateX(90deg);
-    animation: rotate_Y 3s linear infinite;
+    animation: rotate_Y 15s infinite;
 }
 
 
