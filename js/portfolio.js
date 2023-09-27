@@ -14,6 +14,7 @@ const content_array = [
 let content_height = window.innerHeight;
 
 let button_colors = ["105, 59, 59", "105, 59, 59", "105, 59, 59"];
+let button_shadow = ["209, 115, 115", "209, 115, 115", "209, 115, 115"];
 
 function section_size() {
   content_height = window.innerHeight;
@@ -26,21 +27,28 @@ function button_color_switch() {
   content_array.forEach((element, index) => {
     (element.getBoundingClientRect().y <= 80) &
     (element.getBoundingClientRect().y >= -(content_height - 161))
-      ? ((button_colors[index] = "207, 129, 129"),
+      ? ((button_colors[index] = "137, 255, 123"),
+        (button_shadow[index] = "199, 255, 135"),
         (buttons[index].style.cssText =
-          "background-color : rgb(" + button_colors[index] + ");"))
+          "background-color : rgb(" +
+          button_colors[index] +
+          ");box-shadow: 0px 0px 20px rgb(" +
+          button_shadow[index] +
+          ");"))
       : ((button_colors[index] = "105, 59, 59"),
+        (button_shadow[index] = "209, 115, 115"),
         (buttons[index].style.cssText =
-          "background-color : rgb(" + button_colors[index] + ");"));
+          "background-color : rgb(" +
+          button_colors[index] +
+          ");box-shadow: 0px 0px 20px rgb(" +
+          button_shadow[index] +
+          ");"));
   });
 }
 
-function button_up(button, color, scroll_psn) {
-  button.target.style.cssText =
-    "box-shadow: 0px 0px 20px rgb(199, 255, 135);background-color : rgb(" +
-    color +
-    ");";
+function button_up(scroll_psn) {
   window.scrollTo({ top: scroll_psn, behavior: "smooth" });
+  button_color_switch();
 }
 
 section_size();
@@ -57,15 +65,9 @@ document.querySelectorAll("li").forEach((element) => {
   element.addEventListener("click", (button) => {
     let index = button.target.className.slice(-1) - 1;
     button.target.style.cssText =
-      "box-shadow: 0px 0px 0px rgb(199, 255, 135);background-color : rgb(" +
+      "box-shadow: 0px 0px 0px rgb(209, 115, 115);background-color : rgb(" +
       button_colors[index] +
       ");";
-    setTimeout(
-      button_up,
-      200,
-      button,
-      button_colors[index],
-      (content_height - 80) * (index + 1)
-    );
+    setTimeout(button_up, 200, (content_height - 80) * (index + 1));
   });
 });
