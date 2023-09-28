@@ -29,7 +29,7 @@ function button_color_switch() {
   content_array.forEach((element, index) => {
     (element.getBoundingClientRect().y <= nav_panel_height) &
     (element.getBoundingClientRect().y >=
-      -(content_height - nav_panel_height * 2 - 1))
+      -(content_height - nav_panel_height * 2 - 2))
       ? ((button_colors[index] = "137, 255, 123"),
         (button_shadow[index] = "199, 255, 135"),
         (buttons[index].style.cssText =
@@ -65,11 +65,11 @@ addEventListener("resize", () => {
   section_size();
 });
 
-document
-  .querySelector(".welcome_box")
-  .addEventListener("drag", (event_item) => {
-    console.log(event_item);
-  });
+// document
+//   .querySelector(".welcome_box")
+//   .addEventListener("drag", (event_item) => {
+//     console.log(event_item);
+//   });
 
 document.querySelectorAll("li").forEach((element) => {
   element.addEventListener("click", (button) => {
