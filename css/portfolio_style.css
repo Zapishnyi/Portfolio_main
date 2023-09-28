@@ -117,6 +117,7 @@ html {
     opacity: 50%;
     animation: rotate_Y 15s infinite;
     user-select: none;
+    font-size: 3vw;
 
 
 }
