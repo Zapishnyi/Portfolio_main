@@ -86,7 +86,7 @@ html {
 
 .welcome_box {
 
-    background-color: rgb(255, 255, 255);
+    background: rgb(255, 227, 208);
     display: flex;
     order: 0;
 
@@ -106,7 +106,7 @@ html {
 
     order: 1;
 
-    background-color: darkmagenta;
+    background: rgb(255, 227, 208);
 }
 
 .box_side {
@@ -242,17 +242,22 @@ li {
 
 .section {
 
-    background-size: cover;
+
+    box-shadow: 0 0 15px rgb(117, 117, 117);
 }
 
 .about_me {
-    background: rgb(82, 139, 55);
+    background: rgb(255, 227, 208);
 }
 
 .projects {
-    background: rgb(55, 70, 139);
+    background: rgb(255,
+            227,
+            208);
 }
 
 .contacts {
-    background: rgb(139, 55, 128);
+    background: rgb(255,
+            227,
+            208);
 }
