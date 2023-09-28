@@ -65,6 +65,12 @@ addEventListener("resize", () => {
   section_size();
 });
 
+document
+  .querySelector(".welcome_box")
+  .addEventListener("drag", (event_item) => {
+    console.log(event_item);
+  });
+
 document.querySelectorAll("li").forEach((element) => {
   element.addEventListener("click", (button) => {
     let index = button.target.className.slice(-1) - 1;

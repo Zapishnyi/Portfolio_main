@@ -114,8 +114,9 @@ html {
     width: 14vw;
     position: absolute;
 
-    opacity: 80%;
+    opacity: 50%;
     animation: rotate_Y 15s infinite;
+    user-select: none;
 
 
 }
@@ -167,6 +168,8 @@ html {
 .side_front {
     background-color: rgb(239, 255, 9);
     transform: translate3d(0, 0, 7vw);
+    text-align: center;
+    line-height: 14vw;
 
 }
 
