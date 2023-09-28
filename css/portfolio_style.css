@@ -30,8 +30,8 @@ html {
 }
 
 .box_side {
-    height: 200px;
-    width: 200px;
+    height: 14vw;
+    width: 14vw;
     position: absolute;
 
     opacity: 80%;
@@ -65,38 +65,38 @@ html {
 
 .side_top {
     background-color: blueviolet;
-    transform: translate3d(0, -100px, 0) rotateX(90deg);
+    transform: translate3d(0, -7vw, 0) rotateX(90deg);
     animation: rotate_Y 15s infinite;
 }
 
 .side_right {
     background-color: rgb(43, 226, 73);
-    transform: translate3d(100px, 0, 0) rotateY(90deg);
+    transform: translate3d(7vw, 0, 0) rotateY(90deg);
     animation: rotate_Y 15s infinite;
 
 }
 
 .side_left {
     background-color: rgb(226, 43, 43);
-    transform: translate3d(-100px, 0, 0) rotateY(90deg);
+    transform: translate3d(-7vw, 0, 0) rotateY(90deg);
     animation: rotate_Y 15s infinite;
 }
 
 .side_front {
     background-color: rgb(214, 226, 43);
-    transform: translate3d(0, 0, 100px);
+    transform: translate3d(0, 0, 7vw);
     animation: rotate_Y 15s infinite;
 }
 
 .side_back {
     background-color: rgb(148, 98, 5);
-    transform: translate3d(0, 0, -100px);
+    transform: translate3d(0, 0, -7vw);
     animation: rotate_Y 15s infinite;
 }
 
 .side_bottom {
     background-color: rgb(1, 26, 255);
-    transform: translate3d(0, 100px, 0) rotateX(90deg);
+    transform: translate3d(0, 7vw, 0) rotateX(90deg);
     animation: rotate_Y 15s infinite;
 }
 
@@ -153,22 +153,22 @@ ul {
     align-items: center;
     height: 100%;
     padding: 0;
-    padding-left: 60px;
+    padding-left: 4vw;
 }
 
 li {
     background-color: rgb(105, 59, 59);
     list-style: none;
-    padding: 5px 15px;
+    padding: 0.5vw 1vw;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 2vw + 2px;
     box-shadow: 0px 0px 20px rgb(209, 115, 115);
     transition: 0.2s;
     cursor: pointer;
     user-select: none;
-    width: 150px;
+    width: fit-content;
     text-align: center;
-    margin-right: 60px;
+    margin-right: 4vw;
 }
 
 .section {
