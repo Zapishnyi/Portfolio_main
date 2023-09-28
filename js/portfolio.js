@@ -14,7 +14,7 @@ const content_array = [
 
 let content_height = window.innerHeight;
 let nav_panel_height = nav_panel.offsetHeight;
-let button_colors = ["105, 59, 59", "105, 59, 59", "105, 59, 59"];
+let button_colors = ["202, 115, 115", "202, 115, 115", "202, 115, 115"];
 let button_shadow = ["209, 115, 115", "209, 115, 115", "209, 115, 115"];
 
 function section_size() {
@@ -38,7 +38,7 @@ function button_color_switch() {
           ");box-shadow: 0px 0px 20px rgb(" +
           button_shadow[index] +
           ");"))
-      : ((button_colors[index] = "105, 59, 59"),
+      : ((button_colors[index] = "202, 115, 115"),
         (button_shadow[index] = "209, 115, 115"),
         (buttons[index].style.cssText =
           "background-color : rgb(" +

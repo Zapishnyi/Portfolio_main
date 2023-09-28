@@ -221,7 +221,7 @@ ul {
 }
 
 li {
-    background-color: rgb(105, 59, 59);
+    background-color: rgb(202, 115, 115);
     list-style: none;
     padding: 0.5vw 1vw;
     border-radius: 5px;
@@ -233,6 +233,7 @@ li {
 
     text-align: center;
     margin-right: 4vw;
+
 }
 
 .section {
