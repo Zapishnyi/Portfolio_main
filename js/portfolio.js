@@ -19,6 +19,7 @@ let button_shadow = ["209, 115, 115", "209, 115, 115", "209, 115, 115"];
 
 function section_size() {
   content_height = window.innerHeight;
+  nav_panel_height = nav_panel.offsetHeight;
   content.forEach((item) => {
     item.style.cssText =
       "height :" + (content_height - nav_panel_height) + "px;";
@@ -26,10 +27,12 @@ function section_size() {
 }
 
 function button_color_switch() {
+  nav_panel_height = nav_panel.offsetHeight + 1;
   content_array.forEach((element, index) => {
+    console.log(nav_panel_height);
     (element.getBoundingClientRect().y <= nav_panel_height) &
     (element.getBoundingClientRect().y >=
-      -(content_height - nav_panel_height * 2 - 2))
+      -(content_height - nav_panel_height * 2 - 1))
       ? ((button_colors[index] = "137, 255, 123"),
         (button_shadow[index] = "199, 255, 135"),
         (buttons[index].style.cssText =
@@ -61,8 +64,12 @@ addEventListener("scroll", () => {
 });
 
 addEventListener("resize", () => {
-  nav_panel_height = nav_panel.offsetHeight;
   section_size();
+  button_color_switch();
+});
+addEventListener("swipe", () => {
+  section_size();
+  button_color_switch();
 });
 
 // document
@@ -81,7 +88,7 @@ document.querySelectorAll("li").forEach((element) => {
     setTimeout(
       button_up,
       200,
-      (content_height - nav_panel_height) * (index + 1)
+      (content_height - nav_panel_height + 1) * (index + 1)
     );
   });
 });
