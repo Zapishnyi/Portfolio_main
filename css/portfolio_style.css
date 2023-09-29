@@ -69,8 +69,8 @@
 
 body,
 html {
-    position: fixed;
-    overflow-y: scroll;
+
+
     margin: 0;
     padding: 0;
     height: 100%;
@@ -109,6 +109,9 @@ html {
     order: 1;
 
     background: rgb(255, 227, 208);
+    font-size: 30px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .box_side {
@@ -116,10 +119,11 @@ html {
     width: 14vw;
     position: absolute;
 
-    opacity: 50%;
+
     animation: rotate_Y 15s infinite;
     user-select: none;
     font-size: 3vw;
+    opacity: 50%;
 
 
 }
@@ -127,22 +131,27 @@ html {
 @keyframes rotate_Y {
     0% {
         rotate: 0 0 0 360deg;
+        /* opacity: 100%; */
     }
 
     25% {
         rotate: 0 1 1 360deg;
+        /* opacity: 100%; */
     }
 
     50% {
         rotate: 0 0 0 360deg;
+        /* opacity: 100%; */
     }
 
     75% {
         rotate: 1 0 1 360deg;
+        /* opacity: 100%; */
     }
 
     100% {
         rotate: 0 0 0 360deg;
+        /* opacity: 100%; */
     }
 
     /* turning box elements */
@@ -173,7 +182,7 @@ html {
     transform: translate3d(0, 0, 7vw);
     text-align: center;
     line-height: 14vw;
-
+    z-index: 5;
 }
 
 .side_back {
