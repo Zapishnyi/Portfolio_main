@@ -55,13 +55,13 @@
     }
 
     .welcome_box {
-        flex-grow: 1;
+        flex-grow: 2;
         width: 100%;
 
     }
 
     .welcome_message {
-        flex-grow: 4;
+        flex-grow: 3;
         width: 100%;
 
     }
@@ -101,7 +101,6 @@ html {
     perspective-origin: center;
 
 
-
 }
 
 
@@ -112,8 +111,12 @@ html {
 
     background: rgb(255, 227, 208);
     font-size: 30px;
-    padding: 30px;
+    padding: 0 50px;
     box-sizing: border-box;
+    text-align: justify;
+    align-items: center;
+
+
 }
 
 .box_side {
