@@ -1,0 +1,14 @@
+document.querySelector('.nav_button').addEventListener('click',()=>{
+    document.querySelector('.main_page').style.transform="rotate(-12deg)";
+    document.querySelector('.nav_panel').style.transform="rotate(-90deg)";
+    document.querySelector('.home').style.left="175px"
+    document.querySelector('.info').style.left="185px"
+    document.querySelector('.contacts').style.left="195px"
+})
+document.querySelector('.nav_button_close').addEventListener('click',()=>{
+    document.querySelector('.main_page').style.transform="rotate(0deg)";
+    document.querySelector('.nav_panel').style.transform="rotate(0deg)";
+    document.querySelector('.home').style.left="0px"
+    document.querySelector('.info').style.left="0px"
+    document.querySelector('.contacts').style.left="0px"
+})

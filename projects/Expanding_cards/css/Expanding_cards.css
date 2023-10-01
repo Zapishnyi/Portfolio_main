@@ -1,0 +1,38 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+.wrapper{
+    display: flex;
+    height: 100%;
+    
+}
+.wrapper *{
+    border-radius: 50px;
+    margin: 20px;
+    height: auto;background-size: cover;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 5px 5px 20px  black;
+    background-position: center;
+}
+.panel_1{
+    background-image: url(../img/018.JPG);
+    width: 100%;
+}
+.panel_2{
+    background-image: url(../img/041.JPG);
+    width: 150px;
+}
+.panel_3{
+    background-image: url(../img/079.JPG);
+    width: 150px;
+}
+.panel_4{
+    background-image: url(../img/086.JPG);
+    width: 150px;
+}
+.panel_5{
+    background-image: url(../img/111.JPG);
+    width: 150px;
+}

@@ -1,0 +1,105 @@
+@media (max-width:300px) {
+    input,button,ul{
+        display: none;
+    }
+    h1{
+        display: none;
+        font-size: small;
+    }
+    .items_container::after{
+        display: block;
+        text-align: center;
+        overflow-wrap: break-word;
+        content: 'Sorry, screen is too small :(';
+    }
+}
+@media (max-width:500px){
+    .items_container *, .items_container .input_box *  {
+        font-size: 10px;
+    }
+    .items_container .input_box input{
+        width:calc(100% - 55px);
+    }
+}
+@media (min-width:900px){
+    body .items_container{
+        width: 700px;
+    }
+}
+html,
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: aqua;
+     
+}
+.items_container{
+    padding: 50px;
+    box-sizing: border-box;
+    width: 80%;
+    background-color: #0a1679;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.add_list_btn{
+    background-color: red;
+    cursor: pointer;
+    
+}
+.input_box{
+    display: flex;
+    width: 100%;
+    
+   
+}
+.input_box input{
+  
+    height: 30px;
+    outline-color: white;
+    font-size: 20px;
+    width:calc(100% - 102px);
+   }
+.input_box button{
+    height: 36px;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    user-select: none;
+}
+    
+.input_box button:active{
+    background-color: #850000;
+    transition: 0.1s;
+}
+ul{
+    width: 100%;
+    padding: 0;
+     
+}
+li {
+    list-style: none;
+    line-height: 29px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    
+}
+li button{
+    border-radius: 5px;
+    background-color: rgb(0, 255, 76);
+    font-size: 20px;
+    user-select: none;
+    border: 0;
+}
+li button:active{
+    background-color: rgb(0, 145, 43);
+    transition: 0.1s;
+}
+

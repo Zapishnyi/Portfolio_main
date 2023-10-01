@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/Geeks_form_style.css">
+</head>
+<body>
+    <h2 class="main_header">Geeks Survey Form</h2>
+    <form class="geek_form" name="geek_form" id="geek_form" action="#" method="post">
+        
+            <Label for="user_name"> Name <br>
+                <input name="user_name" class="field user_name" type="text" id="user_name"  placeholder="Your full name">
+            </Label><br>
+        </div>
+        <div>
+            <Label> E-mail <br>
+                <input name="user_email" class="field user_email" type="email" id="user_mail"placeholder="Your E-mail adress">
+            </Label><br>
+        </div>
+        <div>
+            <Label> Age <br>
+                <input name="user_age" class="field user_age" type="text" id="user_age" autocomplete="on" placeholder="Your curent age">
+            </Label><br>
+        </div>
+        <div>
+            <Label for="user_role"> What option best describes you? <br>
+                <input class="field" name="user_role" id="user_role" type="text"  list="role" autocomplete="on">
+                <datalist id="role">
+                    <option value="Student"></option>
+                    <option value="Intern"></option>
+                    <option value="Professional"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </Label><br>
+        </div>
+        <div>
+            <label >Would you recomend Geeks to a frend?<br>
+            
+                <input type="radio" name="recomendation" id="recomend_1" value="yes"> Yes <br>
+                <input type="radio" name="recomendation" id="recomend_2" value="no"> No <br>
+                <input type="radio" name="recomendation" id="recomend_3" value="maybe"> Maybe <br>
+            </Label>
+        </div>
+        <div>
+            <Label >lang languages and Frameworks known<small>(Check all that apply)</small><br>
+                <input type="checkbox" name="C" id="lang language_1">C <br>
+                <input type="checkbox" name="C++" id="lang language_2">C++ <br>
+                <input type="checkbox" name="C#" id="lang language_3">C# <br>
+                <input type="checkbox" name="Java" id="lang language_4">Java <br>
+                <input type="checkbox" name="Python" id="lang language_5">Python <br>
+                <input type="checkbox" name="JavaScript " id="lang language_6">JavaScript <br>
+                <input type="checkbox" name="React" id="lang language_7">React <br>
+                <input type="checkbox" name="Angular" id="lang language_8">Angular <br>
+                <input type="checkbox" name="Django" id="lang language_9">Django <br>
+                <input type="checkbox" name="Spring" id="lang language_10">Spring <br>
+            </Label>
+        </div>
+        <div>
+            <Label for="soggestions">Any comments or suggestion? <br>
+                <textarea name="user_suggestion" id="soggestions" cols="50" rows="5"></textarea>
+            </Label><br>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <script src="./js/Geeks_form.js"></script>
+</body>
+</html>

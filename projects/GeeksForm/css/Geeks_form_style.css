@@ -1,0 +1,46 @@
+html::-webkit-scrollbar{
+    display: none;
+   
+}
+body{
+    font-family: sans-serif;
+    background-color: #07c66a;
+    font-size: 22px;
+    text-align: center;
+    
+}
+.geek_form{
+    background-color: white;
+    width: 600px;
+    margin:0 auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgb(61, 61, 61) ;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 30px;
+
+}
+.field{
+    width: 100%;
+    line-height: 25px;
+    font-size: 1rem;
+}
+button{
+    background-color: #07c66a;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+}
+div{
+    padding-top: 20px;
+}
+textarea{
+    width: 100%;
+    font-size: 1rem;
+}
+label{
+    user-select: none;
+}

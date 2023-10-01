@@ -1,0 +1,406 @@
+ @font-face {
+     font-family: "Roboto";
+     src: url("../font/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+ }
+
+ @media (max-width: 630px) {
+     .search_field {
+         width: calc(100vw - 218px);
+     }
+
+ }
+
+ @media (max-width: 1200px) {
+     footer .variouse_links {
+         display: flex;
+         justify-content: space-around;
+
+     }
+ }
+
+ /* General style */
+ body,
+ html {
+     margin: 0;
+     font-family: arial, sans-serif;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     min-width: 500px;
+     min-height: 150px;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ /* Header with account link and apps */
+ header {
+
+     height: 48px;
+     display: flex;
+     justify-content: end;
+     padding: 6px;
+     align-items: center;
+
+ }
+
+ .gmail_images {
+     padding-right: 15px;
+     display: flex;
+ }
+
+ .gmail_images a {
+     font-size: 13px;
+     padding-left: 15px;
+     color: rgba(0, 0, 0, 0.87);
+     line-height: 48px;
+ }
+
+ .gmail_images a:hover {
+     text-decoration: underline;
+ }
+
+ .app_account {
+     display: flex;
+     align-items: center;
+     height: 48px;
+     width: 96px;
+     justify-content: space-between;
+     padding-right: 4px;
+ }
+
+ .g_apps_butt {
+     width: 48px;
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+
+ .g_app_wrapper {
+     position: relative;
+     display: flex;
+     justify-content: center;
+ }
+
+ .app_tooltip {
+     visibility: hidden;
+     position: absolute;
+     bottom: -22px;
+     background-color: #4d4f50;
+     border-radius: 4px;
+     padding: 4px 8px;
+     white-space: nowrap;
+     font-size: 13px;
+     color: white;
+     cursor: default;
+
+ }
+
+ .app_tooltip:hover {
+     visibility: visible;
+
+ }
+
+ .g_app_wrapper:hover .app_tooltip {
+     visibility: visible;
+     transition: 0s 0.5s;
+ }
+
+ .g_apps_butt:hover .g_app_butt_glow {
+     background-color: rgb(243, 242, 242);
+ }
+
+ .g_app_butt_glow {
+     position: relative;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: #ffffff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .g_apps {
+     width: 24px;
+     fill: rgb(95, 99, 104);
+ }
+
+ .account_wrapper {
+     position: relative;
+     display: flex;
+     justify-content: center;
+ }
+
+ .account_wrapper:hover .account_tooltip {
+     visibility: visible;
+     transition: 0s 0.5s;
+ }
+
+ .g_account {
+     height: 48px;
+     width: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .g_account:hover .account_outer_ring {
+     background-color: rgb(243, 242, 242);
+ }
+
+ .account_outer_ring {
+     height: 40px;
+     width: 40px;
+     background-color: rgb(255, 255, 255);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .account_innerring {
+     height: 32px;
+     width: 32px;
+     background-color: #7e57c2;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 32px;
+     font-family: Roboto;
+     color: white;
+     font-size: 17px;
+     font-weight: 350;
+
+ }
+
+ .account_tooltip {
+     visibility: hidden;
+     position: absolute;
+     left: -55px;
+     bottom: -38px;
+     background-color: #4d4f50;
+
+     border-radius: 4px;
+     padding: 4px 8px;
+     white-space: nowrap;
+     font-size: 13px;
+     color: white;
+     cursor: default;
+ }
+
+ .account_tooltip:hover {
+     visibility: visible;
+ }
+
+ /* Central part with Google img and search field */
+ main {
+     padding-top: calc(100vh - 652px);
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .search_panel {
+     border: 1px solid #dfe1e5;
+     border-radius: 24px;
+     display: flex;
+
+     align-items: start;
+     margin: 26px;
+     padding-right: 8px;
+
+
+ }
+
+ .search_panel:hover {
+     box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+     border-color: rgba(223, 225, 229, 0);
+
+ }
+
+ .magnifier {
+     width: 20px;
+     height: 20px;
+     fill: #9aa0a6;
+     margin: 13px 1px 10px 14px;
+ }
+
+ .search_field {
+     border: none;
+     line-height: 22px;
+     resize: none;
+     font-size: 17px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 10px 0;
+     overflow: hidden;
+     height: auto;
+
+ }
+
+ .search_field:focus {
+     outline: none;
+
+
+ }
+
+
+
+ .clear_butt {
+     visibility: hidden;
+     width: 24px;
+     height: 28px;
+     border-right: 1px solid #dfe1e5;
+     padding: 0 12px;
+     fill: #70757a;
+     cursor: pointer;
+     margin-top: 9px;
+ }
+
+ .mic_camera {
+     width: 24px;
+     height: 24px;
+     padding: 0 8px;
+     margin: 10px 0;
+     cursor: pointer;
+ }
+
+ .mic {
+     position: relative;
+     display: flex;
+     justify-content: center;
+ }
+
+ .mic:hover .mic_arrow,
+ .mic:hover .mic_tooltip {
+     visibility: visible;
+     transition: 0s 0.3s;
+ }
+
+ .mic_tooltip {
+     background-color: black;
+     color: white;
+     position: absolute;
+     white-space: nowrap;
+     font-size: 11px;
+     bottom: -34px;
+     padding: 8px;
+     font-weight: 600;
+     z-index: 2;
+     visibility: hidden;
+ }
+
+ .mic_arrow {
+     background-color: black;
+     position: absolute;
+     visibility: hidden;
+     height: 15px;
+     width: 15px;
+     rotate: 45deg;
+     bottom: -19px;
+     z-index: 1;
+ }
+
+ .cam {
+     position: relative;
+     display: flex;
+     justify-content: center;
+ }
+
+ .cam_tooltip {
+     background-color: black;
+     color: white;
+     position: absolute;
+     white-space: nowrap;
+     font-size: 11px;
+     bottom: -34px;
+     padding: 8px;
+     font-weight: 600;
+     z-index: 2;
+     visibility: hidden;
+ }
+
+ .cam_arrow {
+     background-color: black;
+     position: absolute;
+     visibility: hidden;
+     height: 15px;
+     width: 15px;
+     rotate: 45deg;
+     bottom: -19px;
+     z-index: 1;
+ }
+
+ .cam:hover .cam_tooltip,
+ .cam:hover .cam_arrow {
+     visibility: visible;
+     transition: 0s 0.3s;
+ }
+
+ .buttons_wrapper input {
+     border: none;
+     height: 36px;
+     background-color: #f8f9fa;
+     border: 1px solid #f8f9fa;
+     border-radius: 4px;
+     color: #3c4043;
+     margin: 3px 3.5px 27px 3.5px;
+     padding: 0 16px;
+     cursor: pointer;
+     font-size: 14px;
+ }
+
+ .buttons_wrapper input:hover {
+     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+     border: 1px solid #dadce0;
+ }
+
+ .language_offer {
+     font-size: 13px;
+     color: #3c4043
+ }
+
+ .language_offer span {
+     color: #1a0dab;
+     padding-left: 3px;
+     padding-right: 3px;
+ }
+
+ .language_offer span:hover {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+
+ /* Footer */
+
+ .country_name {
+     height: 46px;
+     color: #70757a;
+     border-bottom: 1px solid #dadce0;
+     font-size: 15px;
+     background-color: #f2f2f2;
+     line-height: 46px;
+     padding-left: 30px;
+ }
+
+ .variouse_links {
+     width: 100%;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: space-between;
+     background-color: #f2f2f2;
+     flex-wrap: wrap;
+     padding: 0 22px;
+ }
+
+ .footer_nav_right>a,
+ .footer_nav_left>a {
+     color: #70757a;
+     line-height: 46px;
+     font-size: 14px;
+     padding: 0 13px;
+ }

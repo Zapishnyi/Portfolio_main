@@ -60,7 +60,6 @@ function button_up(scroll_psn) {
 section_size();
 
 wrapper.addEventListener("scroll", () => {
-  console.log("scroll");
   button_color_switch();
 });
 
@@ -68,16 +67,6 @@ addEventListener("resize", () => {
   section_size();
   button_color_switch();
 });
-wrapper.addEventListener("swipe", () => {
-  section_size();
-  button_color_switch();
-});
-
-// document
-//   .querySelector(".welcome_box")
-//   .addEventListener("drag", (event_item) => {
-//     console.log(event_item);
-//   });
 
 document.querySelectorAll("li").forEach((element) => {
   element.addEventListener("click", (button) => {
