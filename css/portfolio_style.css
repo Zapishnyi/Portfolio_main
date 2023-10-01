@@ -93,7 +93,7 @@ body {
     height: 100%;
     overflow: hidden;
     overflow-y: scroll;
-    -ms-scroll-chaining: none;
+    /* -ms-scroll-chaining: none; */
     overscroll-behavior: contain;
 }
 
@@ -292,7 +292,7 @@ li {
     /* background: rgb(255,
             227,
             208); */
-    background-image: url(../img/CompDeskWalCol-2890__068.jpg);
+    background-image: url(../img/projects_base_corrected.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
