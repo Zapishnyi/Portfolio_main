@@ -1,6 +1,7 @@
 const welcome = document.querySelector(".welcome_page");
 const content = document.querySelectorAll(".section");
 const nav_panel = document.querySelector(".nav_panel");
+const wrapper = document.querySelector(".wrapper");
 const buttons = [
   document.querySelector(".button_1"),
   document.querySelector(".button_2"),
@@ -29,7 +30,6 @@ function section_size() {
 function button_color_switch() {
   nav_panel_height = nav_panel.offsetHeight + 1;
   content_array.forEach((element, index) => {
-    console.log(nav_panel_height);
     (element.getBoundingClientRect().y <= nav_panel_height) &
     (element.getBoundingClientRect().y >=
       -(content_height - nav_panel_height * 2 - 1))
@@ -53,13 +53,14 @@ function button_color_switch() {
 }
 
 function button_up(scroll_psn) {
-  window.scrollTo({ top: scroll_psn, behavior: "smooth" });
+  wrapper.scrollTo({ top: scroll_psn, behavior: "smooth" });
   button_color_switch();
 }
 
 section_size();
 
-addEventListener("scroll", () => {
+wrapper.addEventListener("scroll", () => {
+  console.log("scroll");
   button_color_switch();
 });
 
@@ -67,7 +68,7 @@ addEventListener("resize", () => {
   section_size();
   button_color_switch();
 });
-addEventListener("swipe", () => {
+wrapper.addEventListener("swipe", () => {
   section_size();
   button_color_switch();
 });
