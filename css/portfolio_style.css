@@ -65,6 +65,10 @@
         width: 100%;
 
     }
+
+    .project_short img {
+        display: none;
+    }
 }
 
 body,
@@ -220,7 +224,7 @@ body {
 
 .nav_panel {
     width: 100%;
-
+    z-index: 90;
     position: sticky;
     top: 0;
     background-color: rgb(8, 49, 49);
@@ -234,6 +238,7 @@ body {
     -webkit-filter: drop-shadow(0px 0px 10px #ceffa0);
     filter: drop-shadow(0px 0px 10px #ceffa0);
     animation: logo_rotate 30s linear infinite;
+
 }
 
 @keyframes logo_rotate {
@@ -273,19 +278,12 @@ li {
 }
 
 .section {
-
-
-    box-shadow: 0 0 15px rgb(117, 117, 117);
-}
-
-.about_me {
-    /* background: rgb(255, 227, 208); */
-    background-image: url(../img/CompDeskWalCol-2890__059.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
+    box-shadow: 0 0 15px rgb(117, 117, 117);
+    box-sizing: border-box;
 }
 
 .projects {
@@ -293,10 +291,60 @@ li {
             227,
             208); */
     background-image: url(../img/projects_base_corrected.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 1.4vw 5vw;
+    font-size: 20px;
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.project_short {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.project_short * {
+    margin: 1.4vw;
+    text-decoration: none;
+    color: rgb(2, 51, 51);
+}
+
+.project_short svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+
+}
+
+.project_short svg:hover {
+    transform: translate(0, -2px);
+    filter: drop-shadow(0 2px 1px rgb(97, 96, 96));
+    transition: 0.2s;
+}
+
+.project_exp {
+
+    /* display: inline-block; */
+    color: rgb(4, 30, 87);
+
+    transform-origin: top;
+
+    transform: scaleY(0.5)
+}
+
+.project_expand {
+    display: block;
+}
+
+.project_roll_in {
+    display: none;
 }
 
 .contacts {
@@ -304,8 +352,10 @@ li {
             227,
             208); */
     background-image: url(../img/CompDeskWalCol-2890__060.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+
+}
+
+.about_me {
+    /* background: rgb(255, 227, 208); */
+    background-image: url(../img/CompDeskWalCol-2890__059.jpg);
 }

@@ -28,9 +28,9 @@ function section_size() {
 }
 
 function button_color_switch() {
-  nav_panel_height = nav_panel.offsetHeight + 1;
+  nav_panel_height = nav_panel.offsetHeight;
   content_array.forEach((element, index) => {
-    (element.getBoundingClientRect().y <= nav_panel_height) &
+    (element.getBoundingClientRect().y <= nav_panel_height + 1) &
     (element.getBoundingClientRect().y >=
       -(content_height - nav_panel_height * 2 - 1))
       ? ((button_colors[index] = "137, 255, 123"),
@@ -80,5 +80,23 @@ document.querySelectorAll("li").forEach((element) => {
       200,
       (content_height - nav_panel_height + 1) * (index + 1)
     );
+  });
+});
+
+function project_details_expand(expand_icon) {
+  console.log(expand_icon);
+  document.querySelector(".project_expand").style.cssText = " display: block;";
+  document.querySelector(".project_roll_in").style.cssText = " display:none ;";
+  // document.querySelector(".project_exp").style.cssText = " height:0;";
+  if (expand_icon.target.className.animVal === "project_expand") {
+    console.log("heppend");
+    expand_icon.target.style.cssText = " display: none;";
+    expand_icon.target.parentElement.childNodes[3].style.cssText =
+      " display: block;";
+  }
+}
+document.querySelectorAll("svg").forEach((expand_icon) => {
+  expand_icon.addEventListener("click", (expand_icon) => {
+    project_details_expand(expand_icon);
   });
 });
