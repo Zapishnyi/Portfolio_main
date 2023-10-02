@@ -320,24 +320,29 @@ li {
     width: 20px;
     height: 20px;
     margin: 0;
+    user-select: none;
 
 }
 
-.project_short svg:hover {
+.no_touch_screen .project_short svg:hover {
     transform: translate(0, -2px);
     filter: drop-shadow(0 2px 1px rgb(97, 96, 96));
     transition: 0.2s;
 }
 
 .project_exp {
-
+    position: relative;
+    top: 0;
     /* display: inline-block; */
     color: rgb(4, 30, 87);
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
+    max-height: fit-content;
 
-    transform-origin: top;
-
-    transform: scaleY(0.5)
 }
+
+
 
 .project_expand {
     display: block;

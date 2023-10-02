@@ -87,16 +87,26 @@ function project_details_expand(expand_icon) {
   console.log(expand_icon);
   document.querySelector(".project_expand").style.cssText = " display: block;";
   document.querySelector(".project_roll_in").style.cssText = " display:none ;";
+  document.querySelector(".project_exp").style.cssText = " height: 0;";
   // document.querySelector(".project_exp").style.cssText = " height:0;";
   if (expand_icon.target.className.animVal === "project_expand") {
     console.log("heppend");
     expand_icon.target.style.cssText = " display: none;";
     expand_icon.target.parentElement.childNodes[3].style.cssText =
       " display: block;";
+    expand_icon.target.parentElement.parentElement.childNodes[3].style.cssText =
+      "  height:200px;";
   }
 }
 document.querySelectorAll("svg").forEach((expand_icon) => {
   expand_icon.addEventListener("click", (expand_icon) => {
     project_details_expand(expand_icon);
   });
+});
+
+addEventListener("touchstart", () => {
+  console.log("touch");
+  if (document.querySelector("body").className !== "touch_screen") {
+    document.querySelector("body").className = "touch_screen";
+  }
 });
