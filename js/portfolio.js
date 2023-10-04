@@ -85,20 +85,28 @@ document.querySelectorAll("li").forEach((element) => {
 
 function project_details_expand(expand_icon) {
   console.log(expand_icon);
-  document.querySelector(".project_expand").style.cssText = " display: block;";
-  document.querySelector(".project_roll_in").style.cssText = " display:none ;";
-  document.querySelector(".project_exp").style.cssText = " height: 0;";
+  document.querySelectorAll(".project_expand").forEach((element) => {
+    element.style.cssText = " display: block;";
+  });
+  document.querySelectorAll(".project_roll_in").forEach((element) => {
+    element.style.cssText = " display:none ;";
+  });
+  document.querySelectorAll(".project_exp").forEach((element) => {
+    element.style.cssText = " height: 0;";
+  });
   // document.querySelector(".project_exp").style.cssText = " height:0;";
-  if (expand_icon.target.className.animVal === "project_expand") {
+  if (expand_icon.target.className === "project_expand expand_control") {
     console.log("heppend");
     expand_icon.target.style.cssText = " display: none;";
-    expand_icon.target.parentElement.childNodes[3].style.cssText =
+    expand_icon.target.parentElement.children[1].style.cssText =
       " display: block;";
     expand_icon.target.parentElement.parentElement.childNodes[3].style.cssText =
-      "  height:200px;";
+      "  height: " +
+      expand_icon.target.parentElement.parentElement.children[1].scrollHeight +
+      "px;";
   }
 }
-document.querySelectorAll("svg").forEach((expand_icon) => {
+document.querySelectorAll(".expand_control").forEach((expand_icon) => {
   expand_icon.addEventListener("click", (expand_icon) => {
     project_details_expand(expand_icon);
   });

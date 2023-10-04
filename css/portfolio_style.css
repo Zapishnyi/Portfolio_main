@@ -234,7 +234,7 @@ body {
 }
 
 .nav_panel img {
-    margin: 0.7vw 10px;
+    margin: 0.7vw 5vw;
     -webkit-filter: drop-shadow(0px 0px 10px #ceffa0);
     filter: drop-shadow(0px 0px 10px #ceffa0);
     animation: logo_rotate 30s linear infinite;
@@ -313,9 +313,10 @@ li {
     margin: 1.4vw;
     text-decoration: none;
     color: rgb(2, 51, 51);
+    user-select: none;
 }
 
-.project_short svg {
+.expand_control svg {
     cursor: pointer;
     width: 20px;
     height: 20px;
@@ -324,7 +325,7 @@ li {
 
 }
 
-.no_touch_screen .project_short svg:hover {
+.no_touch_screen .expand_control:hover .sign {
     transform: translate(0, -2px);
     filter: drop-shadow(0 2px 1px rgb(97, 96, 96));
     transition: 0.2s;
@@ -338,11 +339,19 @@ li {
     overflow: hidden;
     height: 0;
     transition: 0.3s;
-    max-height: fit-content;
+    min-height: fit-content;
 
 }
 
+.sign {
 
+    pointer-events: none;
+
+}
+
+.expand_control {
+    cursor: pointer;
+}
 
 .project_expand {
     display: block;
