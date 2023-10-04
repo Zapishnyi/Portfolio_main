@@ -4,8 +4,8 @@
     }
 
     li {
-        font-size: 15px;
-        width: calc(5vw + 50px);
+        font-size: 20px;
+        width: calc(5vw + 60px);
     }
 
     .nav_panel img {
@@ -227,7 +227,8 @@ body {
     z-index: 90;
     position: sticky;
     top: 0;
-    background-color: rgb(8, 49, 49);
+    /* background-color: rgb(8, 49, 49); */
+    background-color: rgb(14, 12, 12);
     box-shadow: 0 3px 8px rgb(59, 59, 59);
     display: flex;
     justify-content: space-between;
@@ -261,6 +262,7 @@ ul {
     padding-left: 4vw;
 }
 
+
 li {
     background-color: rgb(202, 115, 115);
     list-style: none;
@@ -274,7 +276,12 @@ li {
 
     text-align: center;
     margin-right: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    -webkit-background-clip: text;
 
+    background-clip: text;
+    color: transparent;
 }
 
 .section {
