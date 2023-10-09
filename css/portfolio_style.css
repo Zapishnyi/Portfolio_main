@@ -315,11 +315,7 @@ li {
 .projects img {
     width: 100px;
     margin: 0 0.6vw 0 0;
-
-
-
 }
-
 
 .project_short {
     display: flex;
@@ -352,6 +348,11 @@ li {
     transform: translate(0, -2px);
     filter: drop-shadow(0 2px 1px rgb(97, 96, 96));
     transition: 0.2s;
+}
+
+.no_touch_screen .img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .project_exp {
