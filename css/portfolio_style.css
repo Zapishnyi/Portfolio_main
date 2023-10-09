@@ -305,23 +305,39 @@ li {
     flex-direction: column;
 }
 
+.projects a {
+    display: flex;
+    align-items: center;
+
+    /* width: 100px; */
+}
+
 .projects img {
     width: 100px;
+    margin: 0 0.6vw 0 0;
+
+
+
 }
 
 
 .project_short {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 0.2vw 0;
 }
 
 .project_short * {
-    margin: 0.5vw 1.4vw;
+    margin: 0.5vw 0.6vw;
     text-decoration: none;
     color: rgb(2, 51, 51);
     user-select: none;
 }
+
+.expand_control {
+    height: 20px;
+}
+
 
 .expand_control svg {
     cursor: pointer;

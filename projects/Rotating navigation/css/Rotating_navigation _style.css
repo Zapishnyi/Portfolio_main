@@ -1,44 +1,51 @@
 @font-face {
     font-family: Ubuntu;
     src: url(../fonts/Ubuntu-Medium.ttf);
-  }
-body{
+}
+
+body {
     font-family: Ubuntu;
     font-size: 20px;
     margin: 0;
     background-color: black;
     user-select: none;
 }
-.main_page{
+
+.main_page {
     position: fixed;
     top: 0;
     text-align: center;
     transform-origin: 0 0 0;
     background-color: white;
     box-sizing: border-box;
-    transition:0.5s;
+    transition: 0.5s;
     height: 100%;
 }
-.main_page:first-child{
+
+.main_page:first-child {
     padding-top: 50px;
-    }
-img{
+}
+
+img {
     width: 60%;
     height: auto;
     max-height: 500px;
     max-width: 921px;
 }
-p{
+
+p {
     text-align: justify;
     margin: 0px 100px;
     padding: 10px 0 10px 0;
 }
-h3{
+
+h3 {
     text-align: left;
     margin: 0px 100px;
-    padding: 30px 0 0 0 ;
+    padding: 10px 0 0 0;
 }
-.nav_panel{
+
+.nav_panel {
     display: flex;
     justify-content: space-evenly;
     position: fixed;
@@ -48,35 +55,36 @@ h3{
     width: 200px;
     background-color: crimson;
     border-radius: 50%;
-    transition:0.5s;
+    transition: 0.5s;
 }
-.nav_panel svg{
+
+.nav_panel svg {
     padding-top: 125px;
     cursor: pointer;
-    
+
 }
-.sliding_menu{
+
+.sliding_menu {
     display: flex;
     flex-direction: column;
     height: 220px;
     width: 400px;
     position: fixed;
-    left:-150px;
+    left: -150px;
     bottom: 0;
     color: white;
 }
-.sliding_menu div{
+
+.sliding_menu div {
     display: flex;
     align-items: center;
     position: relative;
     left: 0;
-    transition:0.5s;
+    transition: 0.5s;
     cursor: pointer;
     line-height: 70px;
 }
-.sliding_menu div svg{
+
+.sliding_menu div svg {
     padding-right: 5px;
 }
-
-
-
