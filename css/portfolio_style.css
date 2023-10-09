@@ -1,10 +1,10 @@
 @media (min-width:800px) {
     .nav_panel {
-        height: 80px;
+        height: 60px;
     }
 
     li {
-        font-size: 20px;
+        font-size: 15px;
         width: calc(5vw + 60px);
     }
 
@@ -228,7 +228,7 @@ body {
     position: sticky;
     top: 0;
     /* background-color: rgb(8, 49, 49); */
-    background-color: rgb(14, 12, 12);
+    background-color: rgb(56, 56, 56);
     box-shadow: 0 3px 8px rgb(59, 59, 59);
     display: flex;
     justify-content: space-between;
@@ -266,7 +266,7 @@ ul {
 li {
     background-color: rgb(202, 115, 115);
     list-style: none;
-    padding: 0.5vw 1vw;
+    padding: 0.3vw 0.8vw;
     border-radius: 5px;
 
     box-shadow: 0px 0px 20px rgb(209, 115, 115);
@@ -294,9 +294,6 @@ li {
 }
 
 .projects {
-    /* background: rgb(255,
-            227,
-            208); */
     background-image: url(../img/projects_base_corrected.jpg);
     padding: 1.4vw 5vw;
     font-size: 20px;
@@ -308,6 +305,9 @@ li {
     flex-direction: column;
 }
 
+.projects img {
+    width: 100px;
+}
 
 
 .project_short {
@@ -317,7 +317,7 @@ li {
 }
 
 .project_short * {
-    margin: 1.4vw;
+    margin: 0.5vw 1.4vw;
     text-decoration: none;
     color: rgb(2, 51, 51);
     user-select: none;
@@ -341,13 +341,11 @@ li {
 .project_exp {
     position: relative;
     top: 0;
-    /* display: inline-block; */
     color: rgb(4, 30, 87);
     overflow: hidden;
     height: 0;
-    transition: 0.3s;
-    min-height: fit-content;
-
+    transition: 0.5s;
+    opacity: 0;
 }
 
 .sign {

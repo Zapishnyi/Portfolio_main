@@ -92,7 +92,7 @@ function project_details_expand(expand_icon) {
     element.style.cssText = " display:none ;";
   });
   document.querySelectorAll(".project_exp").forEach((element) => {
-    element.style.cssText = " height: 0;";
+    element.style.cssText = " height: 0; opacity: 0;";
   });
   // document.querySelector(".project_exp").style.cssText = " height:0;";
   if (expand_icon.target.className === "project_expand expand_control") {
@@ -103,7 +103,7 @@ function project_details_expand(expand_icon) {
     expand_icon.target.parentElement.parentElement.childNodes[3].style.cssText =
       "  height: " +
       expand_icon.target.parentElement.parentElement.children[1].scrollHeight +
-      "px;";
+      "px; opacity: 1;";
   }
 }
 document.querySelectorAll(".expand_control").forEach((expand_icon) => {
