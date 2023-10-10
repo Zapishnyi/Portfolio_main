@@ -110,7 +110,7 @@ body {
 
 .welcome_box {
 
-    background: rgb(255, 227, 208);
+    background: rgb(243, 243, 243);
     display: flex;
     order: 0;
 
@@ -129,7 +129,7 @@ body {
 
     order: 1;
 
-    background: rgb(255, 227, 208);
+    background: rgb(243, 243, 243);
     font-size: 30px;
     padding: 0 50px;
     box-sizing: border-box;
@@ -149,6 +149,8 @@ body {
     user-select: none;
     font-size: 3vw;
     opacity: 50%;
+
+
 
 
 }
@@ -332,6 +334,9 @@ li {
 
 .expand_control {
     height: 20px;
+    transform: translate(0, -0px);
+    filter: drop-shadow(0 0px 0px rgb(97, 96, 96));
+    transition: 0.2s;
 }
 
 
@@ -353,6 +358,16 @@ li {
 .no_touch_screen .img:hover {
     transform: scale(1.1);
     transition: 0.3s;
+}
+
+.img {
+    transform: scale(1.0);
+    transition: 0.3s;
+}
+
+.logo_pix {
+    height: 20px;
+    width: 10px;
 }
 
 .project_exp {
