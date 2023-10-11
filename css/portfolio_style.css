@@ -26,7 +26,9 @@
     .welcome_message {
         height: 100%;
         width: 100%;
+        font-size: 25px;
     }
+
 }
 
 @media (max-width:800px) {
@@ -63,10 +65,11 @@
     .welcome_message {
         flex-grow: 3;
         width: 100%;
+        font-size: calc(15px + 1.5vw);
 
     }
 
-    .project_short img {
+    .project_short .img {
         display: none;
     }
 }
@@ -130,8 +133,8 @@ body {
     order: 1;
 
     background: rgb(243, 243, 243);
-    font-size: 30px;
-    padding: 0 50px;
+
+    padding: 0 3.5vw;
     box-sizing: border-box;
     text-align: justify;
     align-items: center;
@@ -300,6 +303,7 @@ li {
     padding: 1.4vw 5vw;
     font-size: 20px;
 
+
 }
 
 .project {
@@ -314,15 +318,122 @@ li {
     /* width: 100px; */
 }
 
-.projects img {
+.projects .img {
     width: 100px;
     margin: 0 0.6vw 0 0;
+
+}
+
+.projects .logo {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.projects img[src*="logo"] {
+    width: 20px;
+
+}
+
+
+.projects a[href*="figma"]::before {
+    content: "Figma design file";
+    position: absolute;
+    font-size: 15px;
+    top: 50px;
+    text-wrap: nowrap;
+    padding: 2px 4px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    color: white;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.no_touch_screen .projects a[href*="figma"]:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects a[href*="figma"]::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    top: 46px;
+    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.no_touch_screen .projects a[href*="figma"]:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects a[href*="codepen"]::before {
+    content: "Codepen link";
+    position: absolute;
+    font-size: 15px;
+    top: 50px;
+    text-wrap: nowrap;
+    padding: 2px 4px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    color: white;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.no_touch_screen .projects a[href*="codepen"]:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects a[href*="codepen"]::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    top: 46px;
+    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.no_touch_screen .projects a[href*="codepen"]:hover::after {
+    visibility: visible;
+    opacity: 1;
 }
 
 .project_short {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin: 0.2vw 0;
+    position: relative;
 }
 
 .project_short * {
@@ -356,7 +467,7 @@ li {
 }
 
 .no_touch_screen .img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: 0.3s;
 }
 
