@@ -328,9 +328,16 @@ li {
     margin-left: auto;
     display: flex;
     justify-content: center;
+    position: relative;
+
 
 }
 
+.logo a {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
 
 .projects img[src*="logo"] {
     width: 20px;
@@ -424,6 +431,51 @@ li {
 }
 
 .no_touch_screen .projects a[href*="codepen"]:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects a[href*="github"]::before {
+    content: "Github link";
+    position: absolute;
+    font-size: 15px;
+    top: 50px;
+    text-wrap: nowrap;
+    padding: 2px 4px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    color: white;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.no_touch_screen .projects a[href*="github"]:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects a[href*="github"]::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    top: 46px;
+    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.no_touch_screen .projects a[href*="github"]:hover::after {
     visibility: visible;
     opacity: 1;
 }
