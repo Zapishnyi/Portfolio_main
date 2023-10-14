@@ -572,4 +572,14 @@ li {
 .about_me {
     /* background: rgb(255, 227, 208); */
     background-image: url(../img/CompDeskWalCol-2890__059.jpg);
+
+}
+
+
+.contacts,
+.about_me {
+    line-height: 40vw;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 10px white;
 }
