@@ -578,8 +578,17 @@ li {
 
 .contacts,
 .about_me {
+    display: flex;
     line-height: 40vw;
     text-align: center;
     font-size: 50px;
     text-shadow: 0 0 10px white;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts img,
+.about_me img {
+    width: 100px;
+    filter: drop-shadow(0 0 10px black);
 }
