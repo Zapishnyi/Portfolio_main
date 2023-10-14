@@ -82,6 +82,13 @@
     .projects {
         padding: 5vw 5vw;
     }
+
+    .contacts,
+    .about_me {
+
+        font-size: 30px;
+        flex-direction: column;
+    }
 }
 
 body,
@@ -194,6 +201,7 @@ body {
         rotate: 0 0 0 360deg;
         /* opacity: 100%; */
     }
+
 
     /* turning box elements */
 
@@ -596,10 +604,12 @@ li {
     text-shadow: 0 0 10px white;
     align-items: center;
     justify-content: center;
+
 }
 
 .contacts img,
 .about_me img {
     width: 100px;
     filter: drop-shadow(0 0 2px black);
+
 }
