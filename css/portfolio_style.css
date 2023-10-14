@@ -27,6 +27,11 @@
         height: 100%;
         width: 100%;
         font-size: 25px;
+        line-height: 4.2vw;
+    }
+
+    .projects {
+        padding: 3vw 5vw;
     }
 
 }
@@ -66,11 +71,16 @@
         flex-grow: 3;
         width: 100%;
         font-size: calc(15px + 1.5vw);
+        line-height: 8vw;
 
     }
 
     .project_short .img {
         display: none;
+    }
+
+    .projects {
+        padding: 5vw 5vw;
     }
 }
 
@@ -138,6 +148,7 @@ body {
     box-sizing: border-box;
     text-align: justify;
     align-items: center;
+
 
 
 }
@@ -300,7 +311,7 @@ li {
 
 .projects {
     background-image: url(../img/projects_base_corrected.jpg);
-    padding: 1.4vw 5vw;
+
     font-size: 20px;
 
 
@@ -590,5 +601,5 @@ li {
 .contacts img,
 .about_me img {
     width: 100px;
-    filter: drop-shadow(0 0 10px black);
+    filter: drop-shadow(0 0 2px black);
 }
