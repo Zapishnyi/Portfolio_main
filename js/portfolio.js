@@ -15,8 +15,9 @@ const content_array = [
 
 let content_height = window.innerHeight;
 let nav_panel_height = nav_panel.offsetHeight;
-let button_colors = ["202, 115, 115", "202, 115, 115", "202, 115, 115"];
-let button_shadow = ["209, 115, 115", "209, 115, 115", "209, 115, 115"];
+let button_colors = ["223, 223, 223", "223, 223, 223", "223, 223, 223"];
+let button_text_color = ["0, 0, 0", "0, 0, 0", "0, 0, 0"];
+let hover_indicator = 0;
 
 function section_size() {
   content_height = window.innerHeight;
@@ -27,27 +28,37 @@ function section_size() {
   });
 }
 
-function button_color_switch() {
+function button_color_switch(button_on_hover, hover_indicator) {
   nav_panel_height = nav_panel.offsetHeight;
   content_array.forEach((element, index) => {
     (element.getBoundingClientRect().y <= nav_panel_height + 1) &
     (element.getBoundingClientRect().y >=
       -(content_height - nav_panel_height * 2 - 1))
-      ? ((button_colors[index] = "137, 255, 123"),
-        (button_shadow[index] = "199, 255, 135"),
+      ? ((button_colors[index] = "0, 0, 0"),
+        (button_text_color[index] = "255, 255, 255"),
         (buttons[index].style.cssText =
           "background-color : rgb(" +
           button_colors[index] +
-          ");box-shadow: 0px 0px 20px rgb(" +
-          button_shadow[index] +
+          ");color: rgb(" +
+          button_text_color[index] +
           ");"))
-      : ((button_colors[index] = "202, 115, 115"),
-        (button_shadow[index] = "209, 115, 115"),
+      : button_on_hover === index
+      ? ((button_colors[index] = "200, 200, 200"),
+        (button_text_color[index] = "0, 0, 0"),
         (buttons[index].style.cssText =
           "background-color : rgb(" +
           button_colors[index] +
-          ");box-shadow: 0px 0px 20px rgb(" +
-          button_shadow[index] +
+          ");color: rgb(" +
+          button_text_color[index] +
+          ");"),
+        (hover_indicator = 0))
+      : ((button_colors[index] = "223, 223, 223"),
+        (button_text_color[index] = "0, 0, 0"),
+        (buttons[index].style.cssText =
+          "background-color : rgb(" +
+          button_colors[index] +
+          ");color: rgb(" +
+          button_text_color[index] +
           ");"));
   });
 }
@@ -68,18 +79,29 @@ addEventListener("resize", () => {
   button_color_switch();
 });
 
-document.querySelectorAll("li").forEach((element) => {
+buttons.forEach((element) => {
   element.addEventListener("click", (button) => {
     let index = button.target.className.slice(-1) - 1;
-    button.target.style.cssText =
-      "box-shadow: 0px 0px 0px rgb(209, 115, 115);background-color : rgb(" +
-      button_colors[index] +
-      ");";
     setTimeout(
       button_up,
       200,
       (content_height - nav_panel_height + 1) * (index + 1)
     );
+  });
+});
+
+buttons.forEach((element) => {
+  element.addEventListener("mouseover", (button) => {
+    let index = button.target.className.slice(-1) - 1;
+    hover_indicator = 1;
+    button_color_switch(index, hover_indicator);
+  });
+});
+
+buttons.forEach((element) => {
+  element.addEventListener("mouseout", () => {
+    hover_indicator = 0;
+    button_color_switch();
   });
 });
 
