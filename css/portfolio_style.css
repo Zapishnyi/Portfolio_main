@@ -1,6 +1,6 @@
 @media (min-width:800px) {
     .nav_panel {
-        height: 60px;
+        height: 50px;
     }
 
     li {
@@ -72,7 +72,7 @@
 
 @media (max-width:800px) {
     .nav_panel {
-        height: 10vw;
+        height: 40px;
     }
 
     li {
@@ -328,46 +328,47 @@ body {
     position: sticky;
     top: 0;
     /* background-color: rgb(8, 49, 49); */
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(223, 223, 223);
     box-shadow: 0 3px 8px rgb(59, 59, 59);
     display: flex;
     justify-content: space-between;
 }
 
 .nav_panel img {
-    margin: 0.7vw 5vw;
-    -webkit-filter: drop-shadow(0px 0px 10px #ceffa0);
-    filter: drop-shadow(0px 0px 10px #ceffa0);
-    animation: logo_rotate 30s linear infinite;
+
+    -webkit-filter: drop-shadow(0px 0px 10px #575757);
+    filter: drop-shadow(0px 0px 10px #575757);
+
 
 }
 
-@keyframes logo_rotate {
-    from {
-        rotate: 0 0 1 0deg;
-    }
-
-    to {
-        rotate: 0 0 1 360deg;
-    }
-}
 
 ul {
     display: flex;
-    margin: 0;
     justify-content: end;
-    align-items: center;
+
     height: 100%;
     padding: 0;
-    padding-left: 4vw;
+    margin: 0 8vw 0 0;
+
+
+
+
 }
 
 
 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(202, 115, 115);
     list-style: none;
-    padding: 0.3vw 0.8vw;
-    border-radius: 5px;
+    height: 100%;
+
+
+
+
+
 
     box-shadow: 0px 0px 20px rgb(209, 115, 115);
     transition: 0.2s;
@@ -375,13 +376,13 @@ li {
     user-select: none;
 
     text-align: center;
-    margin-right: 4vw;
+
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
 
     background-clip: text;
-    color: transparent;
+    color: transparent; */
 }
 
 .section {
