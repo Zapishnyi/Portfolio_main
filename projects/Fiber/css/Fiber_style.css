@@ -316,7 +316,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    margin: 50px 0;
 }
 
 .girl_1 .left_box {
@@ -327,6 +327,7 @@ body {
 
 .girl_wrapper {
     position: relative;
+
 
 }
 
@@ -355,7 +356,7 @@ body {
 
 .girl_wrapper div:nth-child(3) {
     position: absolute;
-    background-color: #D1D893;
+    background-color: #E1E8A3;
     width: 435px;
     height: 418px;
     border-radius: 32px;
@@ -458,6 +459,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 50px 0 150px 0;
 }
 
 .girl_2 .left_box {
@@ -517,7 +519,7 @@ body {
 
 .girl_wrapper_2 svg {
     position: absolute;
-    fill: #D1D893;
+    fill: #E7D08E;
     top: 391px;
     left: 377px;
     z-index: 5;
@@ -529,7 +531,7 @@ body {
 
 .girl_wrapper_2>div:nth-child(3) {
     position: absolute;
-    background-color: #D1D893;
+    background-color: #F8E19F;
     width: 433px;
     height: 418px;
     border-radius: 32px;
