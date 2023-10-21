@@ -1,0 +1,677 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+    font-weight: 600;
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* !!!!!!!!! section 1 */
+.section_1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 1040px;
+    position: relative;
+    background: #F4F1F2;
+
+
+}
+
+
+.left_side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 45%;
+
+
+}
+
+
+
+.left_side>a {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: 4.44vw;
+    flex-grow: 1;
+}
+
+.fiber_logo {
+    width: 143.007px;
+    height: 48px;
+
+
+}
+
+.left_side h1 {
+    display: flex;
+    color: #2A2B2E;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128.571%;
+    margin: 0 4.44vw 8px 4.44vw;
+
+}
+
+.left_side p {
+    display: flex;
+    color: #232427;
+
+    font-feature-settings: 'clig' off,
+        'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 177.778%;
+    letter-spacing: -0.25px;
+    margin: 8px 4.44vw 0 4.44vw;
+}
+
+.store_links {
+    display: flex;
+    margin: 56px 4.44vw 8px 4.44vw;
+}
+
+.store_links>a {
+    margin: 0 24px 0 0;
+}
+
+.right_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-basis: 55%;
+
+
+}
+
+.phone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone>img {
+    display: flex;
+    position: absolute;
+    filter: drop-shadow(-6px 11px 8px rgba(0, 0, 0, 0.15));
+
+}
+
+/* phone screen */
+.phone>img:nth-child(1) {
+    width: 282.976px;
+    height: 611.227px;
+    z-index: 20;
+    filter: drop-shadow(-6px 11px 40px rgba(0, 0, 0, 0.5));
+}
+
+/* phone outer hull */
+.phone>img:nth-child(2) {
+    display: flex;
+    position: relative;
+    z-index: 20;
+
+
+}
+
+/* bottom-right salad */
+.phone>img:nth-child(3) {
+    height: 200px;
+    width: 200px;
+    top: 522px;
+    left: 173px;
+    z-index: 1;
+}
+
+/* top-right sandviches */
+.phone>img:nth-child(4) {
+    height: 185px;
+    width: 185px;
+    top: -74px;
+    left: 199px;
+    z-index: 2;
+
+}
+
+/* left-middle salat */
+.phone>img:nth-child(5) {
+    height: 208px;
+    width: 208px;
+
+    top: 279px;
+    left: -117px;
+    z-index: 3;
+
+
+}
+
+/* bottom green leaf */
+.phone>img:nth-child(6) {
+
+
+
+    top: 620px;
+    left: 46px;
+    z-index: 4;
+}
+
+/* left green leaf */
+.phone>img:nth-child(7) {
+    top: 132px;
+    left: -24px;
+    z-index: 5;
+}
+
+/* right midle green leaf */
+.phone>img:nth-child(8) {
+    top: 397px;
+    left: 407px;
+    z-index: 6;
+}
+
+/* right lemon */
+.phone>img:nth-child(9) {
+    top: 163px;
+    left: 370px;
+    z-index: 7;
+}
+
+/* left lemon */
+.phone>img:nth-child(10) {
+    top: 604px;
+    left: -144px;
+    z-index: 8;
+}
+
+.phone>img:nth-child(11) {
+    top: -18.44px;
+    left: -64.49px;
+    z-index: 9;
+}
+
+/* ark */
+.phone>img:nth-child(12) {
+    top: 90.23px;
+    left: 206.67px;
+    z-index: 10;
+}
+
+/* !!!!!!!!!!!! Section 2 */
+.section_2 {
+    height: 1559px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* achievements block */
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 4.8vw;
+    box-sizing: border-box;
+
+}
+
+.achievements>div {
+    display: flex;
+    margin: 93px 4.8vw 74px 4.8vw;
+
+}
+
+.achievem_body {
+    height: 100px;
+    text-align: center;
+    width: 172px;
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.achievem_body span {
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+
+
+
+}
+
+.achievem_body p:nth-child(1) {
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 12px 0;
+}
+
+.achievem_body p:nth-child(2) {
+
+    color: #2A2B2E;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+
+    font-weight: 400;
+    line-height: 32px;
+    /* 177.778% */
+    letter-spacing: -0.25px;
+    margin: 5px 0;
+}
+
+/* first girl */
+.girl_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.girl_1 .left_box {
+    display: flex;
+    flex-basis: 50%;
+    margin: 0 0 0 9.6vw;
+}
+
+.girl_wrapper {
+    position: relative;
+
+}
+
+.girl_1_pix {
+
+    background: url("../img/Left_woman/27353680_b220.png") lightgray 50% / cover no-repeat;
+    position: relative;
+    height: 474px;
+    width: 463px;
+
+    border-radius: 40px;
+    z-index: 20;
+}
+
+.girl_wrapper svg {
+    position: absolute;
+    fill: #D1D893;
+    top: 398px;
+    left: -74px;
+    z-index: 5;
+    height: 127.026px;
+    width: 127.022px;
+
+
+}
+
+.girl_wrapper div:nth-child(3) {
+    position: absolute;
+    background-color: #D1D893;
+    width: 435px;
+    height: 418px;
+    border-radius: 32px;
+    top: 88px;
+    left: -32px;
+    z-index: 1;
+}
+
+
+
+.girl_wrapper .weight {
+    position: absolute;
+    border-radius: 24px;
+    width: 267px;
+    height: 80px;
+    display: flex;
+    z-index: 21;
+    align-items: center;
+    background: var(--grey-0, #FFF);
+    box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08), 4px 57px 34px 0px rgba(0, 0, 0, 0.05), 7px 100px 40px 0px rgba(0, 0, 0, 0.01), 11px 157px 44px 0px rgba(0, 0, 0, 0.00), -49px 1px 24px 0px rgba(0, 0, 0, 0.05);
+}
+
+.girl_wrapper div:nth-child(4) {
+    position: absolute;
+    top: -34px;
+    left: 299px;
+    z-index: 23;
+}
+
+.girl_wrapper div:nth-child(5) {
+    position: absolute;
+    top: 62px;
+    left: 299px;
+    z-index: 24;
+}
+
+.girl_wrapper div:nth-child(6) {
+    position: absolute;
+    top: 158px;
+    left: 299px;
+    z-index: 25;
+
+}
+
+.weight {
+    color: var(--dark-blue-600-main, #1F3455);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+}
+
+.weight img {
+    width: 32px;
+    height: 32px;
+
+    margin: 0 12px 0 18px;
+
+}
+
+.girl_1 .right_box {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    margin: 0 0 0 6vw;
+    justify-content: center;
+
+}
+
+.girl_1 .right_box p:nth-child(1) {
+    color: #2A2B2E;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    margin: 0 0 8px 0;
+    /* 129.167% */
+}
+
+.girl_1 .right_box p:nth-child(2) {
+    color: #535354;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 200% */
+    letter-spacing: -0.25px;
+    margin: 8px 4.44vw 0 0;
+}
+
+/* second girl */
+.girl_2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.girl_2 .left_box {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    margin: 0 6vw 0 0;
+    justify-content: center;
+}
+
+.girl_2 .left_box p:nth-child(1) {
+    color: #2A2B2E;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    margin: 0 0 8px 7.4vw;
+    /* 129.167% */
+}
+
+.girl_2 .left_box p:nth-child(2) {
+    color: #535354;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 200% */
+    letter-spacing: -0.25px;
+    margin: 8px 0 0 7.4vw;
+}
+
+.girl_2 .right_box {
+    display: flex;
+    flex-basis: 50%;
+    margin: 0 0 0 9.6vw;
+}
+
+.girl_wrapper_2 {
+    position: relative;
+
+}
+
+.girl_2_pix {
+
+    background: url("../img/Right_women/happy-european-woman-eating-tasty-salad-using-cellphone-kitchen-while-having-dinner-sitting\ 1.png") lightgray 50% / cover no-repeat;
+    position: relative;
+    height: 474px;
+    width: 463px;
+
+    border-radius: 40px;
+    z-index: 20;
+}
+
+.girl_wrapper_2 svg {
+    position: absolute;
+    fill: #D1D893;
+    top: 391px;
+    left: 377px;
+    z-index: 5;
+    height: 140.4px;
+    width: 140.394px;
+
+
+}
+
+.girl_wrapper_2>div:nth-child(3) {
+    position: absolute;
+    background-color: #D1D893;
+    width: 433px;
+    height: 418px;
+    border-radius: 32px;
+    top: 88px;
+    left: 62px;
+    z-index: 1;
+}
+
+.girl_wrapper_2>div:nth-child(4) {
+    position: absolute;
+    background-color: #FFF;
+    height: 203px;
+    width: 203px;
+    border-radius: 50%;
+    top: -7px;
+    left: -65px;
+    z-index: 25;
+    filter: drop-shadow(0px 6px 32px rgba(0, 0, 0, 0.08)) drop-shadow(4px 57px 34px rgba(0, 0, 0, 0.05)) drop-shadow(-4px 1px 24px rgba(0, 0, 0, 0.05));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(1) {
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(1) {
+    color: #1F3455;
+
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    margin: 0;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    /* 138.889% */
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(2) {
+    color: var(- #5D6B83);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: -0.25px;
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(2) {
+    position: absolute;
+    background: conic-gradient(#FAA151 0deg 80deg, #73B5F0 80deg 235deg, #9989DC 235deg 0deg);
+    height: 193px;
+    width: 193px;
+    border-radius: 50%;
+    z-index: 19;
+
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(3) {
+    position: absolute;
+    width: 54px;
+    height: 32px;
+
+    z-index: 30;
+    border-radius: 16px;
+    background: var(--grey-0, #FFF);
+
+    box-shadow: 0px 2px 6px 0px rgba(35, 36, 60, 0.14);
+    top: 16px;
+    left: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1F3455;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(4) {
+    position: absolute;
+    width: 54px;
+    height: 32px;
+    z-index: 30;
+    border-radius: 16px;
+    background: var(--grey-0, #FFF);
+    box-shadow: 0px 2px 6px 0px rgba(35, 36, 60, 0.14);
+    top: 163px;
+    left: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1F3455;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+}
+
+.girl_wrapper_2>div:nth-child(4) div:nth-child(5) {
+    position: absolute;
+    width: 54px;
+    height: 32px;
+
+    z-index: 30;
+    border-radius: 16px;
+    background: var(--grey-0, #FFF);
+
+    box-shadow: 0px 2px 6px 0px rgba(35, 36, 60, 0.14);
+    top: 59px;
+    left: -32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1F3455;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+}

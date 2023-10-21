@@ -1,0 +1,45 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 3500px;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block {
+    display: flex;
+}
+
+.original {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px black;
+    height: 180px;
+    width: 250px;
+    background: center url(..//Paralax_background/img/CompDeskWalCol-2909__032.jpg) no-repeat;
+    background-size: cover;
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+html .showed .left_item {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease-in;
+
+}
+
+html .showed .right_item {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease-in 0.1s;
+
+}
