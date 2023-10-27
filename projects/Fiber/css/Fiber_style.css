@@ -80,76 +80,108 @@
 
 
 
+    /* phone screen */
+    .phone>img:nth-child(1) {
+        border-radius: 32px;
+        width: 210.595px;
+        height: 454.883px;
+    }
+
+
+    /* phone outer hull */
+    .phone>img:nth-child(2) {
+        width: 234.223px;
+        height: 475.757px;
+
+    }
+
     /* bottom-right salad */
     .phone>img:nth-child(3) {
-        top: 392px;
-        left: 128px;
-
+        height: 148px;
+        width: 148px;
+        top: 388px;
+        left: 138px;
     }
 
     /* top-right sandviches */
     .phone>img:nth-child(4) {
+        height: 138px;
+        width: 138px;
         top: -55px;
-        left: 148.1px;
+        left: 148px;
 
 
     }
 
     /* left-middle salat */
     .phone>img:nth-child(5) {
-
+        height: 140px;
+        width: 140px;
         top: 207px;
-        left: -84px;
+        left: -76px;
 
     }
 
     /* bottom green leaf */
     .phone>img:nth-child(6) {
-        top: 442px;
+
+        width: 30px;
+        top: 465px;
         left: 34px;
+
     }
 
     /* left green leaf */
     .phone>img:nth-child(7) {
-        top: 985px;
-        left: -25px;
+
+        width: 24px;
+        top: 105px;
+        left: -15px;
+
     }
 
     /* right midle green leaf */
     .phone>img:nth-child(8) {
-        top: 293px;
-        left: 301px;
+        width: 25px;
+        top: 300px;
+        left: 320px;
 
     }
 
     /* right lemon */
     .phone>img:nth-child(9) {
+        height: 45px;
+        width: 45px;
         top: 121px;
-        left: 275px;
+        left: 280px;
 
     }
 
     /* left lemon */
     .phone>img:nth-child(10) {
-        top: 449px;
-        left: -55px;
-
+        height: 45px;
+        width: 45px;
+        top: 450px;
+        left: -98px;
     }
 
-    /* dodts */
+    /* dots */
     .phone>img:nth-child(11) {
-        top: 0;
-        left: 0;
+        height: 96px;
+        width: 96px;
+        top: -13px;
+        left: -48px;
 
     }
 
     /* ark */
     .phone>img:nth-child(12) {
-        top: 73px;
-        left: 153px;
+        height: 391px;
+        width: 126px;
+        top: 60px;
+        left: 155px;
 
     }
-
 
     .store_links a:nth-child(1) {
 
@@ -171,27 +203,126 @@
         padding: 0 16px 0 16px;
     }
 
+
+    /* achievements block */
+
     .achievements {
-        margin-top: 193px;
+        margin-top: 198px;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .achievements>div {
-
-        margin: 93px 0 74px 0;
+        margin: 33px 0;
+        align-items: center;
     }
+
+    .achievements img {
+        height: 73.958px;
+        width: 29.025px;
+
+
+    }
+
+    .achievem_body {
+        height: 80px;
+        width: 128px;
+        text-align: center;
+        margin: 0 8.44px;
+    }
+
+    .achievem_body span {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .achievem_body p:nth-child(1) {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 18px 0 2px 0;
+    }
+
+    .achievem_body p:nth-child(2) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.25px;
+        margin: 4px 0;
+    }
+
+    /* first girl */
 
     .girl_1 {
-        flex-direction: column;
         align-items: center;
-        margin: 0;
+        flex-direction: column;
+
     }
 
-    .girl_wrapper * {
-        transform: scale(0.7);
+    .girl_1 .left_box {}
+
+    .girl_1 .girl_wrapper {
+        margin: 50px 0 145px 16px;
     }
 
+    .girl_1_pix {
+        height: 334px;
+        width: 325px;
+        border-radius: 32px;
+
+    }
+
+    /* dots */
+    .girl_wrapper svg {
+        display: none;
+    }
+
+    /* backplate */
+    .girl_wrapper div:nth-child(3) {
+        width: 249px;
+        height: 296px;
+        border-radius: 32px;
+        top: 56px;
+        left: -18px;
+
+    }
+
+    .girl_wrapper .weight {
+        border-radius: 24px;
+        width: 216px;
+        height: 72px;
+    }
+
+    .girl_wrapper div:nth-child(4) {
+        top: 199px;
+        left: 109px;
+    }
+
+    .girl_wrapper div:nth-child(5) {
+        top: 287px;
+        left: 109px;
+    }
+
+    .girl_wrapper div:nth-child(6) {
+        top: 370px;
+        left: 109px;
+    }
+
+    .weight {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .weight img {
+        width: 28px;
+        height: 28px;
+        margin: 0 12px 0 18px;
+
+    }
+
+    /* second girl */
     .girl_wrapper_2 * {
         transform: scale(0.7);
     }
@@ -270,16 +401,29 @@
         font-size: 18px;
     }
 
+    /* phone screen */
+    .phone>img:nth-child(1) {
+        width: 282.976px;
+        height: 611.227px;
+        border-radius: 40px;
+    }
+
+
+    /* phone outer hull */
+    .phone>img:nth-child(2) {}
 
     /* bottom-right salad */
     .phone>img:nth-child(3) {
+        height: 200px;
+        width: 200px;
         top: 522px;
         left: 173px;
     }
 
     /* top-right sandviches */
     .phone>img:nth-child(4) {
-
+        height: 185px;
+        width: 185px;
         top: -74px;
         left: 199px;
 
@@ -288,7 +432,8 @@
 
     /* left-middle salat */
     .phone>img:nth-child(5) {
-
+        height: 208px;
+        width: 208px;
         top: 279px;
         left: -117px;
 
@@ -347,18 +492,122 @@
         padding: 0 4.44vw 0 4.44vw;
     }
 
+    /* achievements block */
+
+    .achievements {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 4.8vw;
+        box-sizing: border-box;
+    }
+
     .achievements>div {
         margin: 93px 4.8vw 74px 4.8vw;
+    }
+
+    .achievem_body {
+        height: 100px;
+        text-align: center;
+        width: 172px;
+        margin: 0 12px;
+    }
+
+    .achievem_body span {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .achievem_body p:nth-child(1) {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 12px 0;
+    }
+
+    .achievem_body p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.25px;
+        margin: 5px 0;
+    }
+
+    /* first girl */
+    .girl_1 {
+        justify-content: space-around;
+    }
+
+    .girl_1 .left_box {
+        flex-basis: 50%;
     }
 
     .girl_1 .girl_wrapper {
         margin: 69px 0 56px 0;
     }
 
+    .girl_1_pix {
+        height: 474px;
+        width: 463px;
+        border-radius: 40px;
+
+    }
+
+    .girl_wrapper svg {
+        top: 398px;
+        left: -74px;
+        height: 127.026px;
+        width: 127.022px;
+    }
+
+    .girl_wrapper div:nth-child(3) {
+        width: 435px;
+        height: 418px;
+        border-radius: 32px;
+        top: 88px;
+        left: -32px;
+
+    }
+
+    .girl_wrapper .weight {
+        border-radius: 24px;
+        width: 267px;
+        height: 80px;
+    }
+
+    .girl_wrapper div:nth-child(4) {
+        top: -34px;
+        left: 299px;
+    }
+
+    .girl_wrapper div:nth-child(5) {
+        top: 62px;
+        left: 299px;
+    }
+
+    .girl_wrapper div:nth-child(6) {
+        top: 158px;
+        left: 299px;
+    }
+
+    .weight {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .weight img {
+        width: 32px;
+        height: 32px;
+        margin: 0 12px 0 18px;
+
+    }
+
     .girl_1 .right_box {
         max-width: 528px;
     }
 
+    /* girl 2 */
     .girl_2 .left_box {
         max-width: 560px;
     }
@@ -486,13 +735,8 @@ h2 {
 
 /* phone screen */
 .phone>img:nth-child(1) {
-    width: 282.976px;
-    height: 611.227px;
     z-index: 20;
-    width: 282.976px;
-    height: 611.227px;
 
-    border-radius: 40px;
     filter: drop-shadow(-6px 11px 40px rgba(0, 0, 0, 0.5));
 }
 
@@ -505,16 +749,13 @@ h2 {
 
 /* bottom-right salad */
 .phone>img:nth-child(3) {
-    height: 200px;
-    width: 200px;
-
     z-index: 1;
+    transform: rotate(300deg);
 }
 
 /* top-right sandviches */
 .phone>img:nth-child(4) {
-    height: 185px;
-    width: 185px;
+    transform: rotate(270deg);
 
     z-index: 2;
 
@@ -522,8 +763,7 @@ h2 {
 
 /* left-middle salat */
 .phone>img:nth-child(5) {
-    height: 208px;
-    width: 208px;
+
 
     z-index: 3;
 }
@@ -582,9 +822,6 @@ h2 {
 /* achievements block */
 .achievements {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 0 4.8vw;
     box-sizing: border-box;
 }
 
@@ -595,51 +832,35 @@ h2 {
 .achievem_body {
     height: 100px;
     text-align: center;
-    width: 172px;
-    margin: 0 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
 }
 
 .achievem_body span {
     color: #2A2B2E;
-    font-size: 32px;
     font-style: normal;
-    font-weight: 700;
+
 }
 
 .achievem_body p:nth-child(1) {
     color: #2A2B2E;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 32px;
-    margin: 12px 0;
 }
 
 .achievem_body p:nth-child(2) {
     color: #2A2B2E;
     text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.25px;
-    margin: 5px 0;
 }
 
 /* first girl */
 .girl_1 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
 }
 
 .girl_1 .left_box {
     display: flex;
-    flex-basis: 50%;
     justify-content: center;
-
 }
 
 .girl_wrapper {
@@ -649,38 +870,23 @@ h2 {
 .girl_1_pix {
     background: url("../img/Left_woman/27353680_b220.png") lightgray 50% / cover no-repeat;
     position: relative;
-    height: 474px;
-    width: 463px;
-    border-radius: 40px;
     z-index: 20;
 }
 
 .girl_wrapper svg {
     position: absolute;
     fill: #D1D893;
-    top: 398px;
-    left: -74px;
     z-index: 5;
-    height: 127.026px;
-    width: 127.022px;
 }
 
 .girl_wrapper div:nth-child(3) {
     position: absolute;
     background-color: #E1E8A3;
-    width: 435px;
-    height: 418px;
-    border-radius: 32px;
-    top: 88px;
-    left: -32px;
     z-index: 1;
 }
 
 .girl_wrapper .weight {
     position: absolute;
-    border-radius: 24px;
-    width: 267px;
-    height: 80px;
     display: flex;
     z-index: 21;
     align-items: center;
@@ -690,39 +896,25 @@ h2 {
 
 .girl_wrapper div:nth-child(4) {
     position: absolute;
-    top: -34px;
-    left: 299px;
     z-index: 23;
 }
 
 .girl_wrapper div:nth-child(5) {
     position: absolute;
-    top: 62px;
-    left: 299px;
     z-index: 24;
 }
 
 .girl_wrapper div:nth-child(6) {
     position: absolute;
-    top: 158px;
-    left: 299px;
     z-index: 25;
 }
 
 .weight {
     color: #1F3455;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
     letter-spacing: -0.25px;
 }
 
-.weight img {
-    width: 32px;
-    height: 32px;
-    margin: 0 12px 0 18px;
 
-}
 
 .girl_1 .right_box {
     display: flex;
