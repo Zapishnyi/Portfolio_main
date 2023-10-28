@@ -58,6 +58,7 @@
         font-weight: 400;
         line-height: 32px;
         letter-spacing: -0.25px;
+        margin: 16px 0;
     }
 
     .section_1 {
@@ -200,7 +201,7 @@
 
     .section_2 {
         box-sizing: border-box;
-        padding: 0 16px 0 16px;
+        padding: 0 16px 40px 16px;
     }
 
 
@@ -260,7 +261,7 @@
 
     }
 
-    .girl_1 .left_box {}
+
 
     .girl_1 .girl_wrapper {
         margin: 50px 0 145px 16px;
@@ -270,6 +271,7 @@
         height: 334px;
         width: 325px;
         border-radius: 32px;
+        background: url("../img/Left_woman/27353680_b220.png") lightgray 0% 40%/ 450px 450px no-repeat;
 
     }
 
@@ -322,15 +324,122 @@
 
     }
 
-    /* second girl */
-    .girl_wrapper_2 * {
-        transform: scale(0.7);
-    }
 
+    /* second girl */
     .girl_2 {
         flex-direction: column-reverse;
         align-items: center;
         margin: 0;
+    }
+
+    .girl_2 .left_box {
+        width: 100%;
+
+    }
+
+
+
+    .girl_wrapper_2 {
+        margin: 116px 0 50px 0;
+    }
+
+    /* girl itself */
+    .girl_2_pix {
+        height: 334px;
+        width: 325px;
+        border-radius: 32px;
+        margin: 0 16px 0 0;
+        background: url("../img/Right_women/happy-european-woman-eating-tasty-salad-using-cellphone-kitchen-while-having-dinner-sitting\ 1.png") lightgray 50% / cover no-repeat;
+
+    }
+
+    /* dots */
+    .girl_wrapper_2 svg {
+        display: none;
+
+    }
+
+    /* backplate */
+    .girl_wrapper_2>div:nth-child(3) {
+        width: 294px;
+        height: 296px;
+        border-radius: 32px;
+        top: 56px;
+        left: 49px;
+
+    }
+
+    /* calories back plate */
+    .girl_wrapper_2>div:nth-child(4) {
+        height: 166px;
+        width: 166px;
+        top: -48.33px;
+        left: 26.64px;
+        z-index: 25;
+    }
+
+    /* calories front plate */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(1) {
+        height: 115px;
+        width: 115px;
+    }
+
+    /* 2752 */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(1) {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    /*  Total calories  */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(2) {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.25px;
+    }
+
+    /* conic gtardient */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(2) {
+        height: 158px;
+        width: 158px;
+    }
+
+    /* 20% */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(3) {
+        width: 48px;
+        height: 26px;
+        border-radius: 16px;
+        top: 13.5px;
+        left: 129.06px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    /* 45% */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(4) {
+        width: 48px;
+        height: 26px;
+        border-radius: 16px;
+        top: 135.9px;
+        left: 119.08px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+
+    }
+
+    /* 35% */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(5) {
+        width: 48px;
+        height: 26px;
+        border-radius: 16px;
+        top: 49.31px;
+        left: -26.64px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
     }
 
     .section_3 {
@@ -340,10 +449,64 @@
 
     }
 
+    .happy_users>h1:nth-child(1) {
+
+        margin: 56px 0 16px 0;
+    }
+
+    .happy_users>div {
+        font-size: 14px;
+    }
+
+    .app_store_2 {
+        display: flex;
+        padding: 32px 0 24px 0;
+        justify-content: center;
+
+    }
+
+    .app_store_2 a:nth-child(1) {
+        margin: 0 12px 0 0;
+    }
+
+    .app_store_2 a:nth-child(1) svg {
+        width: 154.167px;
+
+    }
+
+    .app_store_2 a:nth-child(2) svg {
+        width: 166.667px;
+
+
+    }
+
+    /* reviews */
     .reviews {
         flex-direction: column;
+
+    }
+
+    .reviews>div {
+        display: flex;
+        flex-basis: 33.3%;
+        flex-direction: column;
+    }
+
+    .reviews>div>div {
+        padding: 16px;
+        margin: 24px 0 0 0;
+    }
+
+    .reviews>div>div>p:nth-child(2) {
+        margin: 8px 0 0 0;
         text-align: left;
     }
+
+    .reviews>div>div>p:nth-child(3) {
+        margin: 12px 0 0 0;
+        text-align: left;
+    }
+
 
     .left_part>div:nth-child(2) {
         display: none;
@@ -364,13 +527,96 @@
     .section_4 {
         box-sizing: border-box;
         padding: 0 16px 0 16px;
+        height: 655px;
+        background: url(../img/phone_bottom.png)lightgray 50% 0%/ cover no-repeat;
     }
 
+    .section_4::after {
+        height: 655px;
 
+    }
+
+    .logo {
+        height: 88px;
+        width: 88px;
+
+
+        margin: 80px 0 24px 0;
+
+    }
+
+    .store_app_3 {
+        margin: 48px 0;
+        z-index: 25;
+    }
+
+    .store_app_3 a:nth-child(1) {
+        margin: 0 16px 0 0;
+    }
+
+    .store_app_3 a:nth-child(1) svg {
+        width: 154.167px;
+    }
+
+    .store_app_3 a:nth-child(2) svg {
+        width: 166.667px;
+
+    }
+
+    /* Footer */
+
+    footer {
+        height: 304px;
+
+    }
+
+    .upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 240px;
+        padding: 0 4.44vw 0 4.44vw;
+    }
+
+    .upper>div {
+        display: flex;
+        flex-direction: column;
+        margin: 32px 0 0 0;
+    }
+
+    .upper>div a:nth-child() {
+        margin: 0 0 32px 0;
+    }
+
+    .lower {
+        height: 64px;
+    }
 }
 
 /* !!!!!!!!!! PC */
 @media (min-width:1250px) {
+    h1 {
+        color: #2A2B2E;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 72px;
+    }
+
+    h2 {
+        color: #2A2B2E;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 62px;
+    }
+
+    p {
+        color: #535354;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.25px;
+    }
+
     .section_1 {
         box-sizing: border-box;
         padding: 18px 4.44vw 0 4.44vw;
@@ -410,7 +656,7 @@
 
 
     /* phone outer hull */
-    .phone>img:nth-child(2) {}
+
 
     /* bottom-right salad */
     .phone>img:nth-child(3) {
@@ -550,6 +796,7 @@
         height: 474px;
         width: 463px;
         border-radius: 40px;
+        background: url("../img/Left_woman/27353680_b220.png") lightgray 50% / cover no-repeat;
 
     }
 
@@ -607,13 +854,122 @@
         max-width: 528px;
     }
 
-    /* girl 2 */
+
+    /* second girl */
+    .girl_2 {
+        justify-content: space-around;
+    }
+
     .girl_2 .left_box {
+        flex-basis: 55%;
         max-width: 560px;
+    }
+
+    .girl_2 .right_box {
+        flex-basis: 45%;
     }
 
     .girl_wrapper_2 {
         margin: 56px 0 158px 0;
+    }
+
+    /* girl itself */
+    .girl_2_pix {
+        height: 474px;
+        width: 463px;
+        border-radius: 40px;
+        background: url("../img/Left_woman/27353680_b220.png") lightgray 50% / cover no-repeat;
+    }
+
+    /* dots */
+    .girl_wrapper_2 svg {
+        top: 391px;
+        left: 377px;
+        height: 140.4px;
+        width: 140.394px;
+    }
+
+    /* backplate */
+    .girl_wrapper_2>div:nth-child(3) {
+        width: 433px;
+        height: 418px;
+        border-radius: 32px;
+        top: 88px;
+        left: 62px;
+
+    }
+
+    /* calories back plate */
+    .girl_wrapper_2>div:nth-child(4) {
+        height: 203px;
+        width: 203px;
+        top: -7px;
+        left: -65px;
+        z-index: 25;
+    }
+
+    /* calories front plate */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(1) {
+        height: 140px;
+        width: 140px;
+    }
+
+    /* 2752 */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(1) {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    /*  Total calories  */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(2) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.25px;
+    }
+
+    /* conic gtardient */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(2) {
+        height: 193px;
+        width: 193px;
+    }
+
+    /* 20% */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(3) {
+        width: 54px;
+        height: 32px;
+        border-radius: 16px;
+        top: 16px;
+        left: 155px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    /* 45% */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(4) {
+        width: 54px;
+        height: 32px;
+        border-radius: 16px;
+        top: 163px;
+        left: 143px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 22px;
+
+    }
+
+    /* 35% */
+    .girl_wrapper_2>div:nth-child(4) div:nth-child(5) {
+        width: 54px;
+        height: 32px;
+        border-radius: 16px;
+        top: 59px;
+        left: -32px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 22px;
     }
 
     .section_3 {
@@ -622,31 +978,91 @@
         padding: 0 4.44vw 0 4.44vw;
     }
 
+    .happy_users>h1:nth-child(1) {
+        max-width: 808px;
+        margin: 76px 0 16px 0;
+    }
+
+    .happy_users>div {
+        font-size: 16px;
+    }
+
+    .app_store_2 {
+        padding: 40px 0 32px 0;
+    }
+
+    .app_store_2>a {
+        margin: 0 12px 0 0;
+    }
+
+    /* reviews */
+
+
+    .reviews>div {
+        display: flex;
+        flex-basis: 33.3%;
+        flex-direction: column;
+    }
+
+    .reviews>div>div {
+        padding: 24px;
+        margin: 32px 16px 0 16px;
+    }
+
+    .reviews>div>div>p:nth-child(2) {
+        margin: 8px 0 0 0;
+    }
+
+    .reviews>div>div>p:nth-child(3) {
+        margin: 12px 0 0 0;
+    }
+
+
     .section_4 {
         box-sizing: border-box;
         padding: 0 3.33vw 0 3.33vw;
+        height: 643px;
+        background: url(../img/phone_bottom.png)lightgray 50% / cover no-repeat;
     }
 
-    h1 {
-        color: #2A2B2E;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 72px;
+    .section_4::after {
+        height: 643px;
     }
 
-    h2 {
-        color: #2A2B2E;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 62px;
+    .logo {
+        margin: 97px 0 16px 0;
+
     }
 
-    p {
-        color: #535354;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: -0.25px;
+    .store_app_3 {
+        margin: 48px 0;
+        z-index: 25;
+    }
+
+    .store_app_3 a:nth-child(1) {
+        margin: 0 12px 0 0;
+    }
+
+    /* Footer */
+
+    footer {
+        height: 224px;
+
+    }
+
+    .upper {
+        display: flex;
+        justify-content: space-between;
+        height: 144px;
+        padding: 0 4.44vw 0 4.44vw;
+    }
+
+    .upper>div a {
+        margin: 0 0 0 67px;
+    }
+
+    .lower {
+        height: 80px;
     }
 
 
@@ -660,8 +1076,9 @@ body {
     font-feature-settings: 'clig' off, 'liga' off;
     font-style: normal;
     height: 100%;
-    width: 100%;
+
     box-sizing: border-box;
+    overflow-x: hidden;
 
 }
 
@@ -868,7 +1285,7 @@ h2 {
 }
 
 .girl_1_pix {
-    background: url("../img/Left_woman/27353680_b220.png") lightgray 50% / cover no-repeat;
+
     position: relative;
     z-index: 20;
 }
@@ -930,19 +1347,17 @@ h2 {
 .girl_2 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
 }
 
 .girl_2 .left_box {
     display: flex;
-    flex-basis: 55%;
     flex-direction: column;
     justify-content: center;
 }
 
 .girl_2 .right_box {
     display: flex;
-    flex-basis: 45%;
+
     justify-content: center;
 }
 
@@ -950,44 +1365,32 @@ h2 {
     position: relative;
 }
 
+/* girl itself */
 .girl_2_pix {
-    background: url("../img/Right_women/happy-european-woman-eating-tasty-salad-using-cellphone-kitchen-while-having-dinner-sitting\ 1.png") lightgray 50% / cover no-repeat;
+
     position: relative;
-    height: 474px;
-    width: 463px;
-    border-radius: 40px;
     z-index: 20;
 }
 
+/* dots */
 .girl_wrapper_2 svg {
     position: absolute;
     fill: #E7D08E;
-    top: 391px;
-    left: 377px;
     z-index: 5;
-    height: 140.4px;
-    width: 140.394px;
 }
 
+/* backplate */
 .girl_wrapper_2>div:nth-child(3) {
     position: absolute;
     background-color: #F8E19F;
-    width: 433px;
-    height: 418px;
-    border-radius: 32px;
-    top: 88px;
-    left: 62px;
     z-index: 1;
 }
 
+/* calories back plate */
 .girl_wrapper_2>div:nth-child(4) {
     position: absolute;
     background-color: #FFF;
-    height: 203px;
-    width: 203px;
     border-radius: 50%;
-    top: -7px;
-    left: -65px;
     z-index: 25;
     filter: drop-shadow(0px 6px 32px rgba(0, 0, 0, 0.08)) drop-shadow(4px 57px 34px rgba(0, 0, 0, 0.05)) drop-shadow(-4px 1px 24px rgba(0, 0, 0, 0.05));
     display: flex;
@@ -995,12 +1398,11 @@ h2 {
     align-items: center;
 }
 
+/* calories front plate */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(1) {
     position: absolute;
     background-color: #FFF;
     border-radius: 50%;
-    height: 140px;
-    width: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1008,95 +1410,68 @@ h2 {
     z-index: 20;
 }
 
+/* 2752 */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(1) {
     color: #1F3455;
     text-align: center;
     margin: 0;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 50px;
-
 }
 
+/*  Total calories  */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(1) p:nth-child(2) {
     color: #5D6B83;
     text-align: center;
     margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
     letter-spacing: -0.25px;
 }
 
+/* conic gtardient */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(2) {
     position: absolute;
     background: conic-gradient(#FAA151 0deg 80deg, #73B5F0 80deg 235deg, #9989DC 235deg 0deg);
-    height: 193px;
-    width: 193px;
     border-radius: 50%;
     z-index: 19;
 }
 
+/* 20% */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(3) {
     position: absolute;
-    width: 54px;
-    height: 32px;
     z-index: 30;
-    border-radius: 16px;
     background: var(--grey-0, #FFF);
     box-shadow: 0px 2px 6px 0px rgba(35, 36, 60, 0.14);
-    top: 16px;
-    left: 155px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #1F3455;
     text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 22px;
     letter-spacing: -0.25px;
 }
 
+/* 45% */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(4) {
     position: absolute;
-    width: 54px;
-    height: 32px;
     z-index: 30;
-    border-radius: 16px;
     background: var(--grey-0, #FFF);
     box-shadow: 0px 2px 6px 0px rgba(35, 36, 60, 0.14);
-    top: 163px;
-    left: 143px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #1F3455;
     text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 22px;
     letter-spacing: -0.25px;
 }
 
+/* 35% */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(5) {
     position: absolute;
-    width: 54px;
-    height: 32px;
     z-index: 30;
-    border-radius: 16px;
     background: #FFF;
     box-shadow: 0px 2px 6px 0px rgba(35, 36, 60, 0.14);
-    top: 59px;
-    left: -32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #1F3455;
     text-align: center;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 22px;
     letter-spacing: -0.25px;
 }
 
@@ -1120,15 +1495,13 @@ h2 {
 .happy_users>h1:nth-child(1) {
     text-align: center;
     display: flex;
-    max-width: 808px;
-    margin: 76px 0 16px 0;
+
 }
 
 .happy_users>div {
     display: flex;
     flex-direction: row;
     color: #2A2B2E;
-    font-size: 16px;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: -0.25px;
@@ -1160,14 +1533,7 @@ h2 {
     height: 14px;
 }
 
-.app_store_2 {
-    padding: 40px 0 32px 0;
-}
-
-.app_store_2>a {
-    margin: 0 12px 0 0;
-}
-
+/* reviews */
 .reviews {
     box-sizing: border-box;
     width: 100%;
@@ -1176,27 +1542,22 @@ h2 {
 }
 
 .reviews>div {
+    display: flex;
     flex-basis: 33.3%;
 }
 
 .reviews>div>div {
-    padding: 24px;
-    margin: 32px 16px 0 16px;
     border-radius: 20px;
     background: #FFF;
-    /* card */
     box-shadow: 0px 23px 35px 0px rgba(166, 171, 189, 0.16);
-
 }
 
-.reviews>div>div>p:nth-child(2) {
-    margin: 8px 0 0 0;
-}
+
 
 .reviews>div>div>p:nth-child(3) {
     color: #2A2B2E;
     font-weight: 600;
-    margin: 12px 0 0 0;
+
 }
 
 .reviews>div>div>div {
@@ -1217,9 +1578,6 @@ h2 {
 
 .section_4 {
     position: relative;
-    /* width: 100%; */
-    height: 643px;
-    background: url(../img/phone_bottom.png)lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1228,17 +1586,15 @@ h2 {
 .section_4::after {
     content: '';
     width: 100%;
-    height: 643px;
+
     top: 0;
     position: absolute;
     background: rgba(0, 0, 0, 0.80);
     z-index: 0;
-
-
 }
 
 .logo {
-    margin: 97px 0 16px 0;
+
     z-index: 15;
 
 }
@@ -1262,29 +1618,23 @@ h2 {
 }
 
 .store_app_3 {
-    margin: 48px 0;
+
     z-index: 25;
 }
 
-.store_app_3 a {
-    margin: 0 12px 0 0;
-}
+
 
 /* Footer */
 footer {
-    height: 224px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-
-
     background: #171717;
 }
 
 .upper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 144px;
-    padding: 0 4.44vw 0 4.44vw;
 }
 
 .upper>div a {
@@ -1294,26 +1644,27 @@ footer {
     font-weight: 400;
     line-height: 32px;
     letter-spacing: -0.25px;
-    margin: 0 0 0 67px;
+
 }
 
 .lower {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(255, 255, 255, 0.40);
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.25px;
+    height: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+
 }
 
 .lower>p {
+
+    display: flex;
+
     color: rgba(255, 255, 255, 0.40);
     text-align: center;
     font-size: 12px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 12px;
     letter-spacing: -0.25px;
 }
