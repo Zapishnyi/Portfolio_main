@@ -1076,12 +1076,20 @@ body {
     font-family: Poppins;
     font-feature-settings: 'clig' off, 'liga' off;
     font-style: normal;
-    height: 100%;
-
     box-sizing: border-box;
     overflow-x: hidden;
-
 }
+
+.hide {
+    opacity: 0;
+    transition: opacity 1.5s cubic-bezier(0, 0, 0.25, 1.27);
+}
+
+body .showed {
+    transition: opacity 1.5s cubic-bezier(0, 0, 0.25, 1.27);
+    opacity: 1;
+}
+
 
 h1 {
     margin: 0;
