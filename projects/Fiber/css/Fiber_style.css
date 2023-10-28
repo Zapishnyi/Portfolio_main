@@ -27,7 +27,7 @@
 }
 
 /* !!!!! Mobile */
-@media (max-width:1250px) {
+@media (max-width:1000px) {
 
     html,
     body {
@@ -594,7 +594,7 @@
 }
 
 /* !!!!!!!!!! PC */
-@media (min-width:1250px) {
+@media (min-width:1000px) {
     h1 {
         color: #2A2B2E;
         font-size: 56px;
@@ -781,11 +781,12 @@
 
     /* first girl */
     .girl_1 {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .girl_1 .left_box {
-        flex-basis: 50%;
+        margin-left: 5.12vw;
+        margin-right: 105px;
     }
 
     .girl_1 .girl_wrapper {
@@ -857,16 +858,16 @@
 
     /* second girl */
     .girl_2 {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .girl_2 .left_box {
-        flex-basis: 55%;
+        margin-left: 2.9vw;
         max-width: 560px;
     }
 
     .girl_2 .right_box {
-        flex-basis: 45%;
+        margin-right: 3.75vw;
     }
 
     .girl_wrapper_2 {
@@ -878,7 +879,7 @@
         height: 474px;
         width: 463px;
         border-radius: 40px;
-        background: url("../img/Left_woman/27353680_b220.png") lightgray 50% / cover no-repeat;
+        background: url("../img/Right_women/happy-european-woman-eating-tasty-salad-using-cellphone-kitchen-while-having-dinner-sitting\ 1.png") lightgray 75% 65%/ 770px no-repeat;
     }
 
     /* dots */
