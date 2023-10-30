@@ -1399,14 +1399,16 @@ h2 {
 
 /* calories back plate */
 .girl_wrapper_2>div:nth-child(4) {
-    position: absolute;
+    /* position: absolute;
     background-color: #FFF;
     border-radius: 50%;
     z-index: 25;
-    filter: drop-shadow(0px 6px 32px rgba(0, 0, 0, 0.08)) drop-shadow(4px 57px 34px rgba(0, 0, 0, 0.05)) drop-shadow(-4px 1px 24px rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(0px 6px 32px rgba(0, 0, 0, 0.08))
+           drop-shadow(4px 57px 34px rgba(0, 0, 0, 0.05)) 
+           drop-shadow(-4px 1px 24px rgba(0, 0, 0, 0.05));
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 /* calories front plate */
@@ -1438,7 +1440,7 @@ h2 {
 
 /* conic gtardient */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(2) {
-    display: none;
+
     position: absolute;
     background: conic-gradient(#FAA151 0deg 80deg, #73B5F0 80deg 235deg, #9989DC 235deg 0deg);
     border-radius: 50%;
