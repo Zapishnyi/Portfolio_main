@@ -1438,6 +1438,7 @@ h2 {
 
 /* conic gtardient */
 .girl_wrapper_2>div:nth-child(4) div:nth-child(2) {
+    display: none;
     position: absolute;
     background: conic-gradient(#FAA151 0deg 80deg, #73B5F0 80deg 235deg, #9989DC 235deg 0deg);
     border-radius: 50%;
