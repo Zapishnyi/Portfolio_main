@@ -1082,12 +1082,14 @@ body {
 
 .hide {
     opacity: 0;
-    transition: opacity 1.5s cubic-bezier(0, 0, 0.25, 1.27);
+    transform: translateY(50px);
+    transition: all 1.5s cubic-bezier(0, 0, 0.25, 1.27);
 }
 
 body .showed {
-    transition: opacity 1.5s cubic-bezier(0, 0, 0.25, 1.27);
+    transition: all 1.5s cubic-bezier(0, 0, 0.25, 1.27);
     opacity: 1;
+    transform: translateY(0);
 }
 
 
