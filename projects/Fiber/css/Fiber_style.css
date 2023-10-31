@@ -591,6 +591,53 @@
     .lower {
         height: 64px;
     }
+
+    /* terms privacy */
+
+    .article>a {
+        top: 24px;
+        left: 16px;
+    }
+
+    .terms_privacy .article {
+        text-align: left;
+        padding: 121px 16px 80px 16px;
+    }
+
+    .terms_privacy h1 {
+        text-align: left;
+    }
+
+    .terms_privacy .update {
+        margin: 17px 0 0 0;
+        color: #2A2B2E;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+        /* 200% */
+
+    }
+
+    .terms_privacy h4 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        margin: 33px 0 0 0;
+    }
+
+    .terms_privacy ul {
+        margin: 16px 0 0 0;
+        padding: 0 0 0 30px;
+    }
+
+    .terms_privacy li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.25px;
+
+    }
 }
 
 /* !!!!!!!!!! PC */
@@ -1066,6 +1113,46 @@
         height: 80px;
     }
 
+    /* terms privacy */
+
+    .article>a {
+        top: 40px;
+        left: 4.44vw;
+    }
+
+    .terms_privacy .article {
+
+        padding: 172px 4.45vw 157px 4.45vw;
+    }
+
+    .terms_privacy .update {
+        margin: 32px 0 0 0;
+        color: #2A2B2E;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 32px;
+
+    }
+
+    .terms_privacy h4 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        margin: 72px 0 0 0;
+    }
+
+    .terms_privacy ul {
+        margin: 16px 0 0 0;
+        padding: 0 0 0 30px;
+    }
+
+    .terms_privacy li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.25px;
+
+    }
 
 }
 
@@ -1681,4 +1768,18 @@ footer {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: -0.25px;
+}
+
+/* terms privacy */
+.article>a {
+    display: flex;
+    position: absolute;
+
+}
+
+.terms_privacy .article {
+    width: 100%;
+    background: #F4F1F2;
+    color: #2A2B2E;
+    box-sizing: border-box;
 }
