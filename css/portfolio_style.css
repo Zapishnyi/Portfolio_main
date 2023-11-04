@@ -1,6 +1,6 @@
 @media (min-width:800px) {
     .nav_panel {
-        height: 50px;
+        height: 40px;
     }
 
     ul {
@@ -9,7 +9,7 @@
     }
 
     li {
-        font-size: 18px;
+        font-size: 15px;
         width: calc(5vw + 60px);
     }
 
@@ -32,14 +32,14 @@
     .welcome_message {
         height: 100%;
         width: 100%;
-        font-size: 25px;
+        font-size: 15px;
         line-height: 3.8vw;
         display: flex;
         flex-direction: column;
     }
 
     .projects {
-        padding: 3vw 5vw;
+        padding: 0.5vw 5vw;
     }
 
     .box_side {
@@ -462,7 +462,7 @@ body {
 .projects {
     background-image: url(../img/projects_base_corrected.jpg);
 
-    font-size: 20px;
+    font-size: 15px;
 
 
 }
@@ -485,7 +485,7 @@ body {
 }
 
 .projects .img {
-    width: 100px;
+    width: 80px;
     margin: 0 0.6vw 0 0;
 
 }
@@ -650,7 +650,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0.2vw 0;
+    margin: 0;
     position: relative;
 }
 
@@ -662,7 +662,7 @@ body {
 }
 
 .expand_control {
-    height: 20px;
+    height: 15px;
     transform: translate(0, -0px);
     filter: drop-shadow(0 0px 0px rgb(97, 96, 96));
     transition: 0.2s;
@@ -671,8 +671,8 @@ body {
 
 .expand_control svg {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: 0;
     user-select: none;
 
@@ -733,6 +733,10 @@ body {
             208); */
     background-image: url(../img/CompDeskWalCol-2890__060.jpg);
 
+}
+
+textarea {
+    resize: none;
 }
 
 .about_me {

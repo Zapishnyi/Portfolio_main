@@ -106,7 +106,6 @@ buttons.forEach((element) => {
 });
 
 function project_details_expand(expand_icon) {
-  console.log(expand_icon);
   document.querySelectorAll(".project_expand").forEach((element) => {
     element.style.cssText = " display: block;";
   });
@@ -116,7 +115,6 @@ function project_details_expand(expand_icon) {
   document.querySelectorAll(".project_exp").forEach((element) => {
     element.style.cssText = " height: 0; opacity: 0;";
   });
-  // document.querySelector(".project_exp").style.cssText = " height:0;";
   if (expand_icon.target.className === "project_expand expand_control") {
     console.log("heppend");
     expand_icon.target.style.cssText = " display: none;";
@@ -140,3 +138,9 @@ addEventListener("touchstart", () => {
     document.querySelector("body").className = "touch_screen";
   }
 });
+
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByTagName("form")) {
+    form.reset();
+  }
+};
