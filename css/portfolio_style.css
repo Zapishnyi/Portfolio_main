@@ -1,3 +1,4 @@
+/* PC */
 @media (min-width:800px) {
     .nav_panel {
         height: 40px;
@@ -74,8 +75,13 @@
         transform: translate3d(0, 80px, 0) rotateX(90deg);
     }
 
+    .projects {
+        font-size: 15px;
+    }
+
 }
 
+/* Mobile */
 @media (max-width:800px) {
     .nav_panel {
         height: 40px;
@@ -179,6 +185,10 @@
 
     .side_bottom {
         transform: translate3d(0, 9vw, 0) rotateX(90deg);
+    }
+
+    .projects {
+        font-size: 18px;
     }
 }
 
@@ -462,9 +472,6 @@ body {
 .projects {
     background-image: url(../img/projects_base_corrected.jpg);
 
-    font-size: 15px;
-
-
 }
 
 .project {
@@ -515,7 +522,7 @@ body {
     content: "Figma design file";
     position: absolute;
     font-size: 15px;
-    top: 50px;
+    top: 30px;
     text-wrap: nowrap;
     padding: 2px 4px;
     border-radius: 3px;
@@ -539,7 +546,7 @@ body {
     content: "";
     position: absolute;
     z-index: 4;
-    top: 46px;
+    top: 26px;
     box-shadow: 0px 3px 8px rgb(68, 68, 68);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
     width: 10px;
@@ -560,7 +567,7 @@ body {
     content: "Codepen link";
     position: absolute;
     font-size: 15px;
-    top: 50px;
+    top: 30px;
     text-wrap: nowrap;
     padding: 2px 4px;
     border-radius: 3px;
@@ -584,7 +591,7 @@ body {
     content: "";
     position: absolute;
     z-index: 4;
-    top: 46px;
+    top: 26px;
     box-shadow: 0px 3px 8px rgb(68, 68, 68);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
     width: 10px;
@@ -605,7 +612,7 @@ body {
     content: "Github link";
     position: absolute;
     font-size: 15px;
-    top: 50px;
+    top: 30px;
     text-wrap: nowrap;
     padding: 2px 4px;
     border-radius: 3px;
@@ -629,7 +636,7 @@ body {
     content: "";
     position: absolute;
     z-index: 4;
-    top: 46px;
+    top: 26px;
     box-shadow: 0px 3px 8px rgb(68, 68, 68);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
     width: 10px;
@@ -751,7 +758,7 @@ textarea {
     display: flex;
     line-height: 40vw;
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
     text-shadow: 0 0 10px white;
     align-items: center;
     justify-content: center;
