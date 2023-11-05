@@ -18,6 +18,7 @@ let nav_panel_height = nav_panel.offsetHeight;
 let button_colors = ["223, 223, 223", "223, 223, 223", "223, 223, 223"];
 let button_text_color = ["0, 0, 0", "0, 0, 0", "0, 0, 0"];
 let hover_indicator = 0;
+let triger = 0;
 
 function section_size() {
   content_height = window.innerHeight;
@@ -65,13 +66,39 @@ function button_color_switch(button_on_hover, hover_indicator) {
 
 function button_up(scroll_psn) {
   wrapper.scrollTo({ top: scroll_psn, behavior: "smooth" });
-  button_color_switch();
 }
 
+function scroll_to_psn(scroll_indicator) {
+  content_array.forEach((section, index) => {
+    console.log(
+      "section:" + index + " - - " + section.getBoundingClientRect().y
+    );
+    console.log("content height: ---" + content_height);
+    if (
+      (section.getBoundingClientRect().y > 40) &
+      (section.getBoundingClientRect().y < 80) &
+      (triger === 0) &
+      (scroll_indicator === 1)
+    ) {
+      button_up((content_height - nav_panel_height + 1) * (index + 1));
+      triger = index + 1;
+    }
+    if (
+      (section.getBoundingClientRect().y > 40) &
+      (section.getBoundingClientRect().y < 80) &
+      (triger !== index)
+    ) {
+      triger = 0;
+    }
+  });
+}
 section_size();
 
 wrapper.addEventListener("scroll", () => {
   button_color_switch();
+  // let scroll_indicator = 0;
+  // setTimeout((scroll_indicator = 1), 5000);
+  // scroll_to_psn(scroll_indicator);
 });
 
 addEventListener("resize", () => {
