@@ -224,7 +224,7 @@
 
 
     .contacts_box svg {
-        margin-right: 0;
+        margin-right: 5px;
     }
 }
 
@@ -786,6 +786,7 @@ body {
 }
 
 .contacts_box div {
+    margin-bottom: 20px;
     text-align: center;
     max-width: 400px;
 }
