@@ -33,7 +33,7 @@
     .welcome_message {
         height: 100%;
         width: 100%;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 3.8vw;
         display: flex;
         flex-direction: column;
@@ -78,7 +78,7 @@
     }
 
     .projects {
-        font-size: 15px;
+        font-size: 20px;
     }
 
 }
