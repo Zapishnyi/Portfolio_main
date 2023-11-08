@@ -171,3 +171,20 @@ window.onbeforeunload = () => {
     form.reset();
   }
 };
+
+const message_field = document.querySelector(".message");
+message_field.addEventListener("input", () => {
+  textarea_expand();
+  if (message_field.value === "") {
+    document.querySelector("label").className = "";
+  } else {
+    console.log("heppend");
+    document.querySelector("label").className = "message_hide";
+  }
+});
+
+function textarea_expand() {
+  message_field.rows = 3;
+  console.log(message_field.scrollHeight);
+  message_field.rows = (message_field.scrollHeight - 82) / 26 + 3;
+}
