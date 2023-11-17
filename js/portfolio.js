@@ -20,6 +20,8 @@ let button_text_color = ["0, 0, 0", "0, 0, 0", "0, 0, 0"];
 let hover_indicator = 0;
 let triger = 0;
 
+// change height of each section while widow resized
+
 function section_size() {
   content_height = window.innerHeight;
   nav_panel_height = nav_panel.offsetHeight;
@@ -28,7 +30,7 @@ function section_size() {
       "height :" + (content_height - nav_panel_height) + "px;";
   });
 }
-
+// switch over button color on coresponded section in viewport
 function button_color_switch(button_on_hover, hover_indicator) {
   nav_panel_height = nav_panel.offsetHeight;
   content_array.forEach((element, index) => {
@@ -63,11 +65,12 @@ function button_color_switch(button_on_hover, hover_indicator) {
           ");"));
   });
 }
-
+// scroll screen till section chosen by user (button pressed)
 function button_up(scroll_psn) {
   wrapper.scrollTo({ top: scroll_psn, behavior: "smooth" });
 }
 
+// determination of position to scroll after coresponded button pressed
 function scroll_to_psn(scroll_indicator) {
   content_array.forEach((section, index) => {
     console.log(
@@ -106,6 +109,7 @@ addEventListener("resize", () => {
   button_color_switch();
 });
 
+// Sections choise buttons functionality
 buttons.forEach((element) => {
   element.addEventListener("click", (button) => {
     let index = button.target.className.slice(-1) - 1;
@@ -117,6 +121,7 @@ buttons.forEach((element) => {
   });
 });
 
+// buttons hover effect in stupid way, ;) but to do it better need to rewrite half of code
 buttons.forEach((element) => {
   element.addEventListener("mouseover", (button) => {
     let index = button.target.className.slice(-1) - 1;
@@ -132,6 +137,7 @@ buttons.forEach((element) => {
   });
 });
 
+// project details expand functionality
 function project_details_expand(expand_icon) {
   document.querySelectorAll(".project_expand").forEach((element) => {
     element.style.cssText = " display: block;";
@@ -153,12 +159,15 @@ function project_details_expand(expand_icon) {
       "px; opacity: 1;";
   }
 }
+
+// projects details expand initialization
 document.querySelectorAll(".expand_control").forEach((expand_icon) => {
   expand_icon.addEventListener("click", (expand_icon) => {
     project_details_expand(expand_icon);
   });
 });
 
+// check, is devise has touch screen
 addEventListener("touchstart", () => {
   console.log("touch");
   if (document.querySelector("body").className !== "touch_screen") {
@@ -184,7 +193,7 @@ message_field.addEventListener("input", () => {
 });
 
 function textarea_expand() {
-  message_field.rows = 3;
   console.log(message_field.scrollHeight);
-  message_field.rows = (message_field.scrollHeight - 82) / 26 + 3;
+  message_field.rows = 10;
+  message_field.rows = (message_field.scrollHeight - 264) / 26 + 10;
 }

@@ -215,6 +215,7 @@
 
     .contacts {
         flex-direction: column;
+        flex-wrap: nowrap !important;
         align-items: center;
         font-size: 20px;
         justify-content: space-evenly;
@@ -786,9 +787,7 @@ body {
 }
 
 .contacts {
-    /* background: rgb(255,
-            227,
-            208); */
+    background: rgb(199, 199, 199);
     /* background-image: url(../img/CompDeskWalCol-2890__060.jpg); */
     display: flex;
     flex-wrap: wrap;
@@ -852,7 +851,7 @@ label {
     overflow: hidden;
     border: 1px solid rgb(131, 131, 131);
     padding: 5px;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 textarea {
@@ -905,13 +904,90 @@ label:hover .your_message {
 
 .message_submit {
     margin-top: 20px;
-    height: 30px;
+    height: 35px;
+    width: 300px;
     font-size: 20px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 33px;
     border: 1px solid rgb(88, 88, 88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+    position: relative;
+
 
 }
+
+.message_submit:hover::before {
+    background: rgb(130, 255, 14);
+    transition: 0.3s;
+
+}
+
+.message_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message_submit::after {
+
+    content: 'Submit';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 290px;
+    background: rgb(255, 255, 255);
+    border-radius: 33px;
+    z-index: 2;
+
+}
+
+.message_submit::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    height: 400px;
+    width: 400px;
+
+    background: linear-gradient(rgba(255, 106, 106, 0)48%, rgb(130, 255, 14) 50%, rgba(255, 106, 106, 0) 52%);
+    animation: send_button_animation 3s infinite linear;
+    border-radius: 18px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+@keyframes send_button_animation {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    25% {
+        transform: rotate(15deg);
+
+    }
+
+    50% {
+        transform: rotate(90deg);
+
+    }
+
+    75% {
+        transform: rotate(165deg);
+
+    }
+
+    100% {
+        transform: rotate(180deg);
+
+    }
+}
+
 
 .about_me {
     /* background: rgb(255, 227, 208); */
