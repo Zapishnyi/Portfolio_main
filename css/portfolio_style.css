@@ -93,7 +93,7 @@
     }
 
     .contacts_box a {
-        margin: 5px 0;
+        margin: 15px 0;
     }
 
     .contacts_box svg {
@@ -787,7 +787,7 @@ body {
 }
 
 .contacts {
-    background: rgb(199, 199, 199);
+    background: rgb(190, 190, 171);
     /* background-image: url(../img/CompDeskWalCol-2890__060.jpg); */
     display: flex;
     flex-wrap: wrap;
@@ -804,6 +804,7 @@ body {
 
 }
 
+/* delited message */
 .contacts_box div {
     margin-bottom: 20px;
     text-align: center;
@@ -811,6 +812,7 @@ body {
 }
 
 .contacts_box a {
+
     display: flex;
     align-items: end;
     text-decoration: none;

@@ -19,6 +19,7 @@ let button_colors = ["223, 223, 223", "223, 223, 223", "223, 223, 223"];
 let button_text_color = ["0, 0, 0", "0, 0, 0", "0, 0, 0"];
 let hover_indicator = 0;
 let triger = 0;
+let text_focus_indicator = 0;
 
 // change height of each section while widow resized
 
@@ -105,8 +106,10 @@ wrapper.addEventListener("scroll", () => {
 });
 
 addEventListener("resize", () => {
-  section_size();
-  button_color_switch();
+  if ((text_focus_indicator = 0)) {
+    section_size();
+    button_color_switch();
+  }
 });
 
 // Sections choise buttons functionality
@@ -192,8 +195,16 @@ message_field.addEventListener("input", () => {
   }
 });
 
+// expanding of texarea when not anought space
 function textarea_expand() {
   console.log(message_field.scrollHeight);
   message_field.rows = 10;
   message_field.rows = (message_field.scrollHeight - 264) / 26 + 10;
 }
+
+message_field.addEventListener("focusin", () => {
+  text_focus_indicator = 1;
+});
+message_field.addEventListener("focusout", () => {
+  text_focus_indicator = 0;
+});
