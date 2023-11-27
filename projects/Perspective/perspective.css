@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --height: 100vh;
+
+}
+
+.wrapper {
+    width: 100vw;
+    height: calc(100vh * 4);
+    display: flex;
+    flex-direction: column;
+    perspective: 600px;
+
+    position: relative;
+    overflow-y: hidden;
+}
+
+
+.side {
+    display: flex;
+    position: absolute;
+    /* perspective-origin: 900px; */
+    background: url(./img/abstract-061-svgrepo-com.svg) center/100px 100px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.box_top,
+.box_bottom {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box_left,
+.box_right {
+    width: 100vh;
+    height: 100vh;
+}
+
+.box_1 {
+    top: 0;
+
+}
+
+.box_2 {
+    top: calc(100vh);
+
+}
+
+.box_3 {
+    top: calc(100vh * 2);
+
+}
+
+.box_4 {
+    top: calc(100vh * 3);
+
+}
+
+.box_top {
+
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0 0;
+
+}
+
+.box_left {
+
+    transform: rotateY(90deg);
+    transform-origin: 0 50% 0;
+
+}
+
+.box_right {
+
+    transform: rotateY(-90deg) translateZ(calc(100vh - 100vw));
+    transform-origin: 100% 0 0;
+}
+
+.box_bottom {
+
+    transform: rotateX(90deg);
+    transform-origin: 50% 100% 0;
+}
