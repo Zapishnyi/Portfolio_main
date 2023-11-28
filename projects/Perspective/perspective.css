@@ -1,5 +1,7 @@
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    overflow-y: hidden;
+    height: 100vh;
 }
 
 * {
@@ -13,19 +15,28 @@ html {
 }
 
 :root {
-    --height: 100svh;
+    --height: 100vh;
 
+}
+
+.base {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
     width: 100vw;
-    height: calc(100svh * 4);
+    height: calc(100vh * 4);
     display: flex;
     flex-direction: column;
     perspective: 600px;
 
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
+
+
+
 }
 
 
@@ -41,13 +52,13 @@ html {
 .box_top,
 .box_bottom {
     width: 100vw;
-    height: 100svh;
+    height: 100vh;
 }
 
 .box_left,
 .box_right {
-    width: 100svh;
-    height: 100svh;
+    width: 100vh;
+    height: 100vh;
 }
 
 .box_1 {
@@ -56,17 +67,17 @@ html {
 }
 
 .box_2 {
-    top: calc(100svh);
+    top: calc(100vh);
 
 }
 
 .box_3 {
-    top: calc(100svh * 2);
+    top: calc(100vh * 2);
 
 }
 
 .box_4 {
-    top: calc(100svh * 3);
+    top: calc(100vh * 3);
 
 }
 
@@ -86,7 +97,7 @@ html {
 
 .box_right {
 
-    transform: rotateY(-90deg) translateZ(calc(100svh - 100vw));
+    transform: rotateY(-90deg) translateZ(calc(100vh - 100vw));
     transform-origin: 100% 0 0;
 }
 
