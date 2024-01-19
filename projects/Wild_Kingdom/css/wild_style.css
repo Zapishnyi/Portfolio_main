@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Roboto:wght@300&display=swap');
+
+/* font-family: 'Italiana',
+sans-serif;
+font-family: 'Montserrat',
+sans-serif;
+font-family: 'Roboto',
+sans-serif; */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --screen_size: calc(1vh + 1vw);
+    --gold_light_bkg: #C1AB81;
+    --gold_light_txt: #C1AB81;
+    --gold_dark_bkg: #9D875C;
+    --gold_dark_txt: #9D875C;
+    --dark_bkg: #222220;
+    --dark_txt: #222220;
+
+
+}
+
+body,
+html {
+    font-family: 'Montserrat',
+        sans-serif;
+    color: var(--dark);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    font-feature-settings: 'clig' off, 'liga' off;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Naviagion bar ------------------------------------------*/
+.nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.753) 30%, rgba(0, 0, 0, 0));
+}
+
+.container {
+    display: flex;
+    max-width: 1567px;
+    margin: 0 auto;
+    padding: 0 5px;
+    height: 100%;
+
+}
+
+.nav img {}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 129px;
+
+
+}
+
+.nav .container ul {
+
+    align-items: center;
+    flex-direction: row;
+    text-wrap: nowrap;
+
+
+}
+
+.nav a {
+    color: var(--gold_light_txt);
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: var(--gold_dark_txt);
+    bottom: 0;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.nav a:not(.button):hover::after {
+    width: 100%;
+}
+
+
+.nav .container ul li {}
+
+.nav .container ul:nth-child(2) li:not(:last-child) {
+    display: flex;
+    margin-right: calc(1vw * 3);
+}
+
+.nav .container ul:nth-child(4) li:not(:last-child) {
+    display: flex;
+    margin-right: calc(1vw * 3.5);
+}
+
+.logo {}
+
+.button {
+    padding: 14px 36px;
+    border: 1px solid var(--gold_light_txt);
+    border-radius: 30px;
+    transition: all 0.3s;
+    color: var(--gold_light_txt);
+    line-height: 100%;
+}
+
+.button:hover {
+    background: var(--gold_dark_txt);
+    color: var(--dark_txt);
+    transition: all 0.3s;
+}
+
+.burger {
+
+    width: 50px;
+    height: 50px;
+    fill: var(--gold_dark_txt);
+    stroke: var(--gold_dark_txt);
+}
+
+/* -----------PC------------ */
+@media (min-width:951px) {
+    .nav .container div:first-child {
+        display: none;
+    }
+
+
+
+    .burger {
+        display: none;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .left__empty {
+        flex: 1 1 20%;
+    }
+
+    .left__text_container {
+        flex: 1 1 40%;
+
+    }
+
+    .left__button_container {
+        flex: 1 1 40%;
+    }
+
+    .hero .container {
+
+
+        flex-direction: row;
+
+
+    }
+
+    .hero__left {
+        flex: 1 2 50%;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 600px;
+
+
+    }
+
+    .hero h1 {
+
+        position: absolute;
+    }
+
+    .hero__centre {
+
+
+        flex: 1 1 0%;
+
+
+
+    }
+
+    .hero__right {
+
+        flex: 1 2 50%;
+
+    }
+
+    .slide_pet_outside {
+        margin-top: 50px;
+    }
+}
+
+/* ----------Mobile--------- */
+@media (max-width:950px) {
+    .nav .container div:first-child {
+        width: 70px;
+        height: 50px;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse;
+    }
+
+    .burger {
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .nav .container ul {
+        display: none;
+    }
+
+    .hero__left {
+        flex: 1 2 35%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .hero h1 {
+
+        position: relative;
+        text-align: center;
+    }
+
+    .hero__centre {
+
+
+        flex: 1 1 20%;
+
+    }
+
+    .hero__right {
+
+        flex: 1 2 28%;
+
+    }
+
+    .left__empty {
+        flex: 1 1 33%;
+    }
+
+    .left__text_container {
+        flex: 1 1 33%;
+
+    }
+
+    .left__button_container {
+        flex: 1 1 33%;
+    }
+}
+
+/* -------Mobili tiny---------------- */
+@media (max-width:400px) {
+    .logo {
+        width: 50%;
+    }
+
+
+    .hero__right {
+        flex: 1 2 15%;
+    }
+}
+
+
+/* Hero section-------------------------------------------- */
+
+.hero {
+    width: 100%;
+    min-height: 600px;
+
+    /* opacity: 0.8; */
+    /* mix-blend-mode: color; */
+    background: url("../img/Hero/Hero_background_tiny_1500.jpg") rgb(211, 211, 211) 50% / cover no-repeat;
+    height: 100vh;
+
+
+}
+
+.hero .container {
+
+    display: flex;
+
+
+
+}
+
+/* Hero left side */
+.hero__left {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.left__text_container {
+    display: flex;
+
+    position: relative;
+    margin-bottom: 15px;
+
+}
+
+.left__button_container {
+
+    margin-top: 15px;
+}
+
+.hero a {
+    /* display: inline-block; */
+
+}
+
+.hero h1 {
+
+
+    z-index: 55;
+    width: calc(40vw + 100px);
+    bottom: 0;
+    display: flex;
+    color: var(--gold_light_txt);
+    font-family: Italiana;
+    font-size: calc(4vw + 30px);
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: capitalize;
+
+
+}
+
+/* Hero slide centre and right */
+.hero__centre {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.slide_pet_outside {
+
+    aspect-ratio: 1/1;
+    width: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gold_light_txt);
+    border-radius: 50%;
+    transition:
+        transform 1s ease,
+        height 1s ease-in,
+        width 1s ease-in,
+        opacity 1s cubic-bezier(.25, .89, .17, 1);
+}
+
+
+
+.slide_pet_inside {
+    position: absolute;
+    display: flex;
+    width: 115%;
+    height: 115%;
+
+}
+
+.hero_pet_1 {
+    height: calc(35vw + 60px);
+    max-height: 370px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    opacity: 1;
+
+}
+
+.hero_pet_2 {
+    height: calc(7vw + 30px);
+    max-height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(130% + 60px), -50%);
+}
+
+.hero_pet_3 {
+    height: calc(7vw + 30px);
+    max-height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(250% + 60px), -50%);
+}
+
+.hero_pet_4 {
+    height: calc(7vw + 30px);
+    max-height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(360% + 60px), -50%);
+    opacity: 0;
+
+}
+
+.hero_pet_5 {
+    height: calc(7vw + 30px);
+    max-height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-230% - 60px), -50%);
+    opacity: 0;
+
+}
+
+/* -----------PC------------ */
+@media (min-width:951px) {
+    .hero_pet_2 {
+        opacity: 1;
+    }
+
+    .hero_pet_3 {
+        opacity: 1;
+    }
+}
+
+/* ----------Mobile--------- */
+@media (max-width:950px) {
+    .hero_pet_2 {
+        opacity: 0;
+    }
+
+    .hero_pet_3 {
+        opacity: 0;
+    }
+}
+
+.pet_1 {
+
+    background: url(../img/Hero/Hero_pet_1_500_tiny.png) center / contain no-repeat;
+}
+
+.pet_2 {
+
+    background: url(../img/Hero/Hero_pet_2_500_tiny.png) center / contain no-repeat;
+}
+
+.pet_3 {
+
+    background: url(../img/Hero/Hero_pet_3_500_tiny.png) center / contain no-repeat;
+}
+
+.pet_4 {
+
+    background: url(../img/Hero/Hero_pet_4_500_tiny.png) center / contain no-repeat;
+}
+
+.pet_5 {
+
+    background: url(../img/Hero/Hero_pet_5_500_tiny.png) center / contain no-repeat;
+}
+
+
+
+.hero__right {
+    display: flex;
+    min-width: calc(5vw - 200px);
+}
+
+
+.hero__left {}
+
+.left__empty {}
+
+.left__text_container {}
+
+.left__button_container {}
+
+.hero__centre {}
+
+.slide_pet_outside {}
+
+.hero__right {}
