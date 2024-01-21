@@ -1,0 +1,214 @@
+@import url('https://fonts.cdnfonts.com/css/acumin-pro');
+
+/* General style declaration */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --text_black: #000;
+    --bckgd_black: #000;
+    --text_gold: #C17B31;
+    --bckgd_gold: #C17B31;
+    --text_gray: #929292;
+    --text_white: #FFF;
+    --bckgd_gradient_gold1: linear-gradient(129deg, #FF9F39 3.01%, #AF5B03 98.36%);
+    --bckgd_gradient_gold2: linear-gradient(103deg, #ED9232 0%, #814403 99.18%);
+}
+
+body,
+html {
+    font-family: 'Acumin Pro', sans-serif;
+    color: var(--text_gray);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 5px;
+    display: flex;
+    height: 100%;
+}
+
+/* Navigation bar -------------------------- */
+nav {
+
+
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    user-select: none;
+}
+
+nav .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    width: 41px;
+    height: 47px;
+    transition: all 0.3s;
+}
+
+.no_touch nav .logo:hover {
+    filter: drop-shadow(0 5px 20px var(--bckgd_gold));
+}
+
+nav ul {
+    display: flex;
+    text-wrap: nowrap;
+
+}
+
+nav ul:nth-child(2) a {
+    color: var(--text_gray);
+}
+
+.no_touch nav ul:nth-child(2) a:hover,
+.no_touch nav ul:nth-child(3) li:first-child a:hover {
+    color: var(--text_gold);
+    transition: all 0.3s;
+
+}
+
+nav ul:nth-child(3) li:first-child a {
+    color: var(--text_black);
+    font-weight: 500;
+}
+
+
+nav .button {
+    color: var(--text_white);
+    padding: 12px 24px;
+    border-radius: 10px;
+    background: var(--bckgd_gold);
+    transition: all 0.3s;
+
+
+}
+
+.no_touch nav .button:hover {
+    box-shadow: 0 5px 30px rgb(196, 196, 196);
+}
+
+nav ul:nth-child(2) li:not(:last-child) {
+    margin-right: calc(1vw * 1.7);
+}
+
+nav ul:nth-child(3) li:not(:last-child) {
+    margin-right: calc(1vw * 3.125);
+}
+
+/* Hero section -----------------------------*/
+.hero {
+    width: 100%;
+    min-height: 1142px;
+}
+
+
+.hero .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1 1 50%;
+
+}
+
+.hero__left h1 {
+    color: var(--text_black);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 109.375%;
+    letter-spacing: -1.28px;
+
+}
+
+.hero__left h1 span {
+    color: var(--text_gold);
+}
+
+.hero__left .store_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hero__left>p {
+    margin: 32px 0 64px 0;
+}
+
+.store_links a {
+    display: flex;
+    align-items: center;
+    width: 194.778px;
+    height: 56.289px;
+    border-radius: 4.467px;
+    background: var(--bckgd_black);
+    justify-content: space-evenly;
+
+    transition: all 0.3s;
+}
+
+.no_touch .store_links a:hover {
+    transform: translate3d(2px, -5px, 0);
+
+    box-shadow: -5px 5px 5px rgb(116, 116, 116);
+}
+
+.store_links p:not(.span) {
+    color: var(--text_white);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.store_links p>span {
+    color: var(--text_white);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.store_links a:not(:last-child) {
+    margin-right: 24px;
+}
+
+.hero__left .mob {
+    display: none;
+}
+
+.hero__right {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    align-items: center;
+}

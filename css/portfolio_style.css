@@ -278,21 +278,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(243, 243, 243);
 
 }
 
 .welcome_box {
 
-    background: rgb(243, 243, 243);
     display: flex;
-    order: 0;
-
+    /* order: 0; */
     justify-content: center;
     align-items: center;
     position: relative;
     perspective: 28vw;
     perspective-origin: center;
-
+    transform-style: preserve-3d;
 
 }
 
@@ -336,7 +335,8 @@ body {
     animation: rotate_Y 15s infinite;
     user-select: none;
 
-    opacity: 50%;
+    opacity: 100%;
+
 
 
 
