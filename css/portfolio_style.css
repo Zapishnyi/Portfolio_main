@@ -457,7 +457,7 @@ body {
     height: 85%;
     width: 85%;
     object-fit: contain;
-    -webkit-filter: drop-shadow(0 0x 3px rgb(0, 0, 0));
+    -webkit-filter: drop-shadow(0 0 3px rgb(0, 0, 0));
     filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
     cursor: pointer;
     opacity: 0;
@@ -575,10 +575,10 @@ body {
     position: absolute;
     font-size: 15px;
     top: 40px;
-    text-wrap: nowrap;
+    text-wrap: none;
     padding: 2px 4px;
     border-radius: 3px;
-    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    box-shadow: 0 3px 8px rgb(68, 68, 68);
     color: white;
     background-color: black;
     width: fit-content;
@@ -599,7 +599,7 @@ body {
     position: absolute;
     z-index: 4;
     top: 36px;
-    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    box-shadow: 0 3px 8px rgb(68, 68, 68);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
     width: 10px;
     height: 10px;
@@ -620,10 +620,10 @@ body {
     position: absolute;
     font-size: 15px;
     top: 40px;
-    text-wrap: nowrap;
+    text-wrap: none;
     padding: 2px 4px;
     border-radius: 3px;
-    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    box-shadow: 0 3px 8px rgb(68, 68, 68);
     color: white;
     background-color: black;
     width: fit-content;
@@ -644,7 +644,7 @@ body {
     position: absolute;
     z-index: 4;
     top: 36px;
-    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    box-shadow: 0 3px 8px rgb(68, 68, 68);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
     width: 10px;
     height: 10px;
@@ -665,10 +665,10 @@ body {
     position: absolute;
     font-size: 15px;
     top: 40px;
-    text-wrap: nowrap;
+    text-wrap: none;
     padding: 2px 4px;
     border-radius: 3px;
-    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    box-shadow: 0 3px 8px rgb(68, 68, 68);
     color: white;
     background-color: black;
     width: fit-content;
@@ -689,7 +689,7 @@ body {
     position: absolute;
     z-index: 4;
     top: 36px;
-    box-shadow: 0px 3px 8px rgb(68, 68, 68);
+    box-shadow: 0 3px 8px rgb(68, 68, 68);
     background: linear-gradient(135deg, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 50%);
     width: 10px;
     height: 10px;

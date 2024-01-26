@@ -35,7 +35,7 @@ function section_size() {
 function button_color_switch(button_on_hover, hover_indicator) {
   nav_panel_height = nav_panel.offsetHeight;
   content_array.forEach((element, index) => {
-    (element.getBoundingClientRect().y <= nav_panel_height + 1) &
+    (element.getBoundingClientRect().y <= nav_panel_height + 1) &&
     (element.getBoundingClientRect().y >=
       -(content_height - nav_panel_height * 2 - 1))
       ? ((button_colors[index] = "0, 0, 0"),
@@ -81,15 +81,15 @@ function scroll_to_psn(scroll_indicator) {
     if (
       (section.getBoundingClientRect().y > 40) &
       (section.getBoundingClientRect().y < 80) &
-      (triger === 0) &
+      (triger === 0) &&
       (scroll_indicator === 1)
     ) {
       button_up((content_height - nav_panel_height + 1) * (index + 1));
       triger = index + 1;
     }
     if (
-      (section.getBoundingClientRect().y > 40) &
-      (section.getBoundingClientRect().y < 80) &
+      (section.getBoundingClientRect().y > 40) &&
+      (section.getBoundingClientRect().y < 80) &&
       (triger !== index)
     ) {
       triger = 0;
@@ -112,7 +112,7 @@ addEventListener("resize", () => {
   }
 });
 
-// Sections choise buttons functionality
+// Sections choose buttons functionality
 buttons.forEach((element) => {
   element.addEventListener("click", (button) => {
     let index = button.target.className.slice(-1) - 1;
