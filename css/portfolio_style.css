@@ -575,7 +575,7 @@ body {
     position: absolute;
     font-size: 15px;
     top: 40px;
-    text-wrap: none;
+    text-wrap: nowrap;
     padding: 2px 4px;
     border-radius: 3px;
     box-shadow: 0 3px 8px rgb(68, 68, 68);
@@ -620,7 +620,7 @@ body {
     position: absolute;
     font-size: 15px;
     top: 40px;
-    text-wrap: none;
+    text-wrap: nowrap;
     padding: 2px 4px;
     border-radius: 3px;
     box-shadow: 0 3px 8px rgb(68, 68, 68);
@@ -665,7 +665,7 @@ body {
     position: absolute;
     font-size: 15px;
     top: 40px;
-    text-wrap: none;
+    text-wrap: nowrap;
     padding: 2px 4px;
     border-radius: 3px;
     box-shadow: 0 3px 8px rgb(68, 68, 68);
