@@ -1,4 +1,3 @@
-const welcome = document.querySelector(".welcome_page");
 const content = document.querySelectorAll(".section");
 const nav_panel = document.querySelector(".nav_panel");
 const wrapper = document.querySelector(".wrapper");
@@ -18,7 +17,7 @@ let nav_panel_height = nav_panel.offsetHeight;
 let button_colors = ["223, 223, 223", "223, 223, 223", "223, 223, 223"];
 let button_text_color = ["0, 0, 0", "0, 0, 0", "0, 0, 0"];
 let hover_indicator = 0;
-let triger = 0;
+let trigger = 0;
 let text_focus_indicator = 0;
 
 // change height of each section while widow resized
@@ -81,18 +80,18 @@ function scroll_to_psn(scroll_indicator) {
     if (
       (section.getBoundingClientRect().y > 40) &
       (section.getBoundingClientRect().y < 80) &
-      (triger === 0) &&
+      (trigger === 0) &&
       (scroll_indicator === 1)
     ) {
       button_up((content_height - nav_panel_height + 1) * (index + 1));
-      triger = index + 1;
+      trigger = index + 1;
     }
     if (
       (section.getBoundingClientRect().y > 40) &&
       (section.getBoundingClientRect().y < 80) &&
-      (triger !== index)
+      (trigger !== index)
     ) {
-      triger = 0;
+      trigger = 0;
     }
   });
 }
@@ -152,7 +151,6 @@ function project_details_expand(expand_icon) {
     element.style.cssText = " height: 0; opacity: 0;";
   });
   if (expand_icon.target.className === "project_expand expand_control") {
-    console.log("heppend");
     expand_icon.target.style.cssText = " display: none;";
     expand_icon.target.parentElement.children[1].style.cssText =
       " display: block;";
