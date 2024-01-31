@@ -819,6 +819,7 @@ label:hover .your_message {
     border-radius: 50%;
     z-index: 1;
     transition: 0.3s;
+    
 }
 
 @keyframes send_button_animation {
@@ -843,6 +844,7 @@ label:hover .your_message {
     }
 }
 
+/*-------------About me section-----------------------------*/
 .about_me {
     /* background: rgb(255, 227, 208); */
     background-image: url(../img/CompDeskWalCol-2890__059.jpg);

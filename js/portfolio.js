@@ -4,12 +4,12 @@ const wrapper = document.querySelector(".wrapper");
 const buttons = [
   document.querySelector(".button_1"),
   document.querySelector(".button_2"),
-  document.querySelector(".button_3"),
+  // document.querySelector(".button_3"),
 ];
 const content_array = [
   document.querySelector(".projects"),
   document.querySelector(".contacts"),
-  document.querySelector(".about_me"),
+  // document.querySelector(".about_me"),
 ];
 
 let content_height = window.innerHeight;
@@ -30,13 +30,14 @@ function section_size() {
       "height :" + (content_height - nav_panel_height) + "px;";
   });
 }
-// switch over button color on coresponded section in viewport
+
+// switch over button color on corresponded section in viewport
 function button_color_switch(button_on_hover, hover_indicator) {
   nav_panel_height = nav_panel.offsetHeight;
   content_array.forEach((element, index) => {
-    (element.getBoundingClientRect().y <= nav_panel_height + 1) &&
-    (element.getBoundingClientRect().y >=
-      -(content_height - nav_panel_height * 2 - 1))
+    element.getBoundingClientRect().y <= nav_panel_height + 1 &&
+    element.getBoundingClientRect().y >=
+      -(content_height - nav_panel_height * 2 - 1)
       ? ((button_colors[index] = "0, 0, 0"),
         (button_text_color[index] = "255, 255, 255"),
         (buttons[index].style.cssText =
@@ -46,55 +47,57 @@ function button_color_switch(button_on_hover, hover_indicator) {
           button_text_color[index] +
           ");"))
       : button_on_hover === index
-      ? ((button_colors[index] = "200, 200, 200"),
-        (button_text_color[index] = "0, 0, 0"),
-        (buttons[index].style.cssText =
-          "background-color : rgb(" +
-          button_colors[index] +
-          ");color: rgb(" +
-          button_text_color[index] +
-          ");"),
-        (hover_indicator = 0))
-      : ((button_colors[index] = "223, 223, 223"),
-        (button_text_color[index] = "0, 0, 0"),
-        (buttons[index].style.cssText =
-          "background-color : rgb(" +
-          button_colors[index] +
-          ");color: rgb(" +
-          button_text_color[index] +
-          ");"));
+        ? ((button_colors[index] = "200, 200, 200"),
+          (button_text_color[index] = "0, 0, 0"),
+          (buttons[index].style.cssText =
+            "background-color : rgb(" +
+            button_colors[index] +
+            ");color: rgb(" +
+            button_text_color[index] +
+            ");"),
+          (hover_indicator = 0))
+        : ((button_colors[index] = "223, 223, 223"),
+          (button_text_color[index] = "0, 0, 0"),
+          (buttons[index].style.cssText =
+            "background-color : rgb(" +
+            button_colors[index] +
+            ");color: rgb(" +
+            button_text_color[index] +
+            ");"));
   });
 }
+
 // scroll screen till section chosen by user (button pressed)
 function button_up(scroll_psn) {
   wrapper.scrollTo({ top: scroll_psn, behavior: "smooth" });
 }
 
-// determination of position to scroll after coresponded button pressed
+// determination of position to scroll after corresponded button pressed
 function scroll_to_psn(scroll_indicator) {
   content_array.forEach((section, index) => {
     console.log(
-      "section:" + index + " - - " + section.getBoundingClientRect().y
+      "section:" + index + " - - " + section.getBoundingClientRect().y,
     );
     console.log("content height: ---" + content_height);
     if (
       (section.getBoundingClientRect().y > 40) &
-      (section.getBoundingClientRect().y < 80) &
-      (trigger === 0) &&
-      (scroll_indicator === 1)
+        (section.getBoundingClientRect().y < 80) &
+        (trigger === 0) &&
+      scroll_indicator === 1
     ) {
       button_up((content_height - nav_panel_height + 1) * (index + 1));
       trigger = index + 1;
     }
     if (
-      (section.getBoundingClientRect().y > 40) &&
-      (section.getBoundingClientRect().y < 80) &&
-      (trigger !== index)
+      section.getBoundingClientRect().y > 40 &&
+      section.getBoundingClientRect().y < 80 &&
+      trigger !== index
     ) {
       trigger = 0;
     }
   });
 }
+
 section_size();
 
 wrapper.addEventListener("scroll", () => {
@@ -118,7 +121,7 @@ buttons.forEach((element) => {
     setTimeout(
       button_up,
       200,
-      (content_height - nav_panel_height + 1) * (index + 1)
+      (content_height - nav_panel_height + 1) * (index + 1),
     );
   });
 });
