@@ -8,6 +8,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 
 ::-webkit-scrollbar {
@@ -23,6 +25,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
+
 }
 
 .wrapper {
@@ -31,7 +34,6 @@ body {
     display: flex;
     flex-direction: column;
     perspective: 600px;
-
     position: relative;
     overflow: hidden;
 
@@ -44,7 +46,7 @@ body {
     display: flex;
     position: absolute;
     /* perspective-origin: 900px; */
-    background: url(./img/abstract-061-svgrepo-com.svg) center/100px 100px;
+    background: url(./img/joshua-bartell-6vvIBTvL90A-unsplash.jpg) center  repeat;
     border: 1px solid rgb(0, 0, 0);
 
 }
@@ -53,6 +55,7 @@ body {
 .box_bottom {
     width: 100vw;
     height: 100vh;
+    z-index: 50;
 }
 
 .box_left,
